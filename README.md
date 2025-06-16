@@ -33,7 +33,7 @@ Provided that:
 **Content & Assets**
 
 **Your Original Content & Assets:**
-All original creative content within this repository (including but not limited to images, videos, and custom design elements found in directories like `images/myImages/` or `videos/myVideos/` if applicable, or any other specifically marked subfolders containing my original work) is **© IAmAGameDev 2025 - All Rights Reserved**.
+All original creative content within this repository (including but not limited to images, videos, and custom design elements found in directories like `myImages/` or `myVideos/` if applicable, or any other specifically marked subfolders containing my original work) is **© IAmAGameDev 2025 - All Rights Reserved**.
 
 This content may not be reproduced, distributed, modified, or used in any way without the prior written consent of the copyright holder. It is provided for viewing purposes only as part of this portfolio showcase.
 
@@ -42,3 +42,15 @@ This content may not be reproduced, distributed, modified, or used in any way wi
 This project utilizes third-party assets under their respective licenses. Specific attributions and licensing details for these assets can be found below:
 
 - **React:** Source: https://react.dev/, License: MIT License.
+- **GitHub Mark (github-mark.svg):** Source: https://github.com/logos, License: Used under GitHub's brand guidelines for referential display.
+- **itch.io Logo (itchio-logo-textless-black.svg):** Source: https://itch.io/press-kit, License: Used under itch.io's brand guidelines for referential display.
+- **[in] Logo (LI-In-Bug.png):** Source: https://brand.linkedin.com/downloads, License: Used under LinkedIn's brand and user agreements for referential display.
+- **Google Fonts - Roboto & Material Icons:** Source: https://fonts.google.com/, License: Various open-source licenses, including the SIL Open Font License, Apache License, and Ubuntu Font License. Please refer to the specific font pages on the Google Fonts website for precise terms of use and redistribution.
+- **Orange logomark for light backgrounds (Git-Icon-1788C.png):** Source: https://git-scm.com/downloads/logos, License: Creative Commons Attribution 3.0 Unported License.
+- **csharpIcon (csharpIcon.png):** Source: https://github.com/dotnet/vscode-csharp/blob/main/images/csharpIcon.png, License: MIT License.
+- **file-type-js-offical (file-type-js-official.svg):** Source: https://iconduck.com/icons/102041/file-type-js-official, License: MIT License.
+- **file-type-html (file-type-html.svg):** Source: https://iconduck.com/icons/102006/file-type-html, License: MIT License.
+- **file-type-css (file-type-css.svg):** Source: https://iconduck.com/icons/101876/file-type-css, License: MIT License.
+- **file-type-reactjs (file-type-reactjs.svg):** Source: https://iconduck.com/icons/102361/file-type-reactjs, License: MIT License.
+- **trello Icon (trello.svg):** Source: https://iconduck.com/icons/95002/trello, License: Creative Commons Zero V1.0 Universal.
+- **slack Icon (trello.svg):** Source: https://iconduck.com/icons/94899/slack-icon, License: Creative Commons Zero V1.0 Universal.

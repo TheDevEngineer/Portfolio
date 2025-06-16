@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, Arial;
+  margin: 120px 0 0 0;
+  padding-top: 0;
+}
+
+.fixed-position {
+  overflow: hidden;
+}
+
+/* NEEDS MOVING */
+.hr-solid {
+  border-top: 2px solid black;
+  margin: 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* Desktop */
+@media only screen and (min-width: 767px) {
+}
