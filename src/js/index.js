@@ -2,7 +2,7 @@ let openOrClose = false;
 
 const myButton = document.getElementById('toTopButton');
 
-function changeMobileNav() {
+window.changeMobileNav = function () {
   openOrClose = !openOrClose;
   if (openOrClose) {
     document.getElementById('mobileNav').style.height = '100%';
@@ -13,7 +13,7 @@ function changeMobileNav() {
     document.querySelector('body').classList.remove('fixed-position');
     scrollFunction();
   }
-}
+};
 
 window.onscroll = function () {
   scrollFunction();
@@ -27,7 +27,7 @@ function scrollFunction() {
   }
 }
 
-function toTopFunction() {
+window.toTopFunction = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+};
