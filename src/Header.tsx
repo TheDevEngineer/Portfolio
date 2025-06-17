@@ -1,35 +1,97 @@
 import './styles/header.css';
 
-function Header() {
+interface Props {
+  mobileNavOpen: boolean;
+  setMobileNavOpen: (newState: boolean) => void;
+}
+
+function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
   return (
-    <header>
-      <div className='header'>
-        <div className='header-left'>
-          <a
-            className='header-link'
-            href='index.html'
-            rel='noopener noreferrer'
-          >
-            <p className='header-name'>Bailey's Portfolio</p>
-          </a>
+    <>
+      <header>
+        <div className='header'>
+          <div className='header-left'>
+            <a
+              className='header-link'
+              href='index.html'
+              rel='noopener noreferrer'
+            >
+              <p className='header-name'>Bailey's Portfolio</p>
+            </a>
+          </div>
+          <div className='header-right-desktop'>
+            <a className='header-link' href='#projects'>
+              Projects
+            </a>
+            <a className='header-link' href='#'>
+              CV/R&#201;SUM&#201;
+            </a>
+            <a
+              href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                className='logo'
+                src='assets/images/LI-In-Bug.png'
+                alt='LinkedIn Logo'
+              />
+            </a>
+            <a
+              href='https://iamagamedev.itch.io/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                className='logo'
+                src='assets/images/itchio-logo-textless-black.svg'
+                alt='itch.io Logo'
+              />
+            </a>
+            <a
+              href='https://github.com/IAmAGameDev'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                className='logo'
+                src='assets/images/github-mark.svg'
+                alt='GitHub Mark'
+              />
+            </a>
+          </div>
+          <div className='header-right-mobile'>
+            <a
+              href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                className='logo'
+                src='assets/images/LI-In-Bug.png'
+                alt='LinkedIn Logo'
+              />
+            </a>
+            <span
+              className='material-symbols-outlined'
+              onClick={() => setMobileNavOpen(!mobileNavOpen)}
+            >
+              menu
+            </span>
+          </div>
         </div>
-        <div className='header-right-desktop'>
-          <a className='header-link' href='#projects'>
+      </header>
+      <div
+        id='mobileNav'
+        className='overlay'
+        style={{ height: mobileNavOpen ? '100%' : '0%' }}
+      >
+        <div className='overlay-content'>
+          <a href='#projects' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
             Projects
           </a>
-          <a className='header-link' href='#'>
+          <a href='#' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
             CV/R&#201;SUM&#201;
-          </a>
-          <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <img
-              className='logo'
-              src='assets/images/LI-In-Bug.png'
-              alt='LinkedIn Logo'
-            />
           </a>
           <a
             href='https://iamagamedev.itch.io/'
@@ -54,27 +116,8 @@ function Header() {
             />
           </a>
         </div>
-        <div className='header-right-mobile'>
-          <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <img
-              className='logo'
-              src='assets/images/LI-In-Bug.png'
-              alt='LinkedIn Logo'
-            />
-          </a>
-          <span
-            className='material-symbols-outlined'
-            //onclick='changeMobileNav()'
-          >
-            menu
-          </span>
-        </div>
       </div>
-    </header>
+    </>
   );
 }
 
