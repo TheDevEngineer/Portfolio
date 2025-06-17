@@ -9,8 +9,9 @@ This page currently uses a default Vite + React template.
 
 ## To-Do List
 
-- [x] Add React.
-- [ ] Re-create my portfolio.
+- [x] Re-create my portfolio.
+- [ ] Seperate the footer to a React module.
+- [ ] Update the videos for my Portfolio (use a image instead maybe) and Cataclysm.
 - [ ] Add my CV.
 - [ ] Start individual page design.
 
