@@ -13,20 +13,47 @@
   flex: 1;
 }
 
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.welcome-image {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
 .section-title {
   margin-top: 10px;
   font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .section-description {
   margin: 20px 0;
 }
 
+.context-description {
+  margin: 20px;
+}
+
 .context-and-description,
 .download-and-source,
 .section-title,
-.source-code-text {
+.source-code-text,
+.section-description {
   text-align: center;
+}
+
+.greenARef,
+.greenARef:visited {
+  word-wrap: break-word;
+  color: green;
 }
 
 /* Features */
@@ -66,6 +93,7 @@
 .iframe {
   max-width: 100%;
   height: auto;
+  border: none;
 }
 
 .source-code-text {
@@ -80,7 +108,7 @@
   margin: 20px;
   display: flex;
   line-height: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .source-code-numbers {
