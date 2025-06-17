@@ -3,7 +3,7 @@ import Header from './Header';
 import ToTopArrow from './ToTopArrow';
 import MobileNav from './MobileNav';
 
-function App() {
+function HeaderManager() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   useEffect(() => {
     document.body.style.overflow = mobileNavOpen ? 'hidden' : '';
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default HeaderManager;
