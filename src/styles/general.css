@@ -8,6 +8,10 @@ body {
   padding-top: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .fixed-position {
   overflow: hidden;
 }
@@ -23,8 +27,4 @@ a.anchor {
   position: relative;
   top: -100px;
   visibility: hidden;
-}
-
-/* Desktop */
-@media only screen and (min-width: 767px) {
 }

@@ -1,0 +1,183 @@
+.desktop-layout {
+  display: none;
+}
+
+.page-welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.section-title {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.section-description {
+  margin: 20px 0;
+}
+
+.context-and-description,
+.download-and-source,
+.section-title,
+.source-code-text {
+  text-align: center;
+}
+
+/* Features */
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
+
+.feature-box {
+  margin: 20px;
+  border: 2px solid black;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-sub-box p {
+  margin: 20px;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 20px;
+}
+
+/* Download & Source */
+.itchio-and-github {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.source-code-text {
+  margin: 20px;
+}
+
+.source-code-box {
+  position: relative;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-size: 16px;
+  margin: 20px;
+  display: flex;
+  line-height: 20px;
+  overflow-x: scroll;
+}
+
+.source-code-numbers {
+  width: 30px;
+  min-width: 30px;
+  padding: 10px 0 10px 10px;
+}
+
+.source-code-box pre {
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.source-code-box code {
+  flex: 1;
+}
+
+.source-code-wrapper {
+  position: relative;
+}
+
+.source-code-box-button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 2;
+  width: 150px;
+  height: 30px;
+}
+
+.language-csharp .db {
+  color: #569cd6;
+}
+
+.language-csharp .comment {
+  color: #008000;
+}
+
+/* GUI GUIContent EditorGUIUtility Texture2D*/
+.language-csharp .delegates {
+  color: #4ec9b0;
+}
+
+/* Desktop */
+@media only screen and (min-width: 767px) {
+  .mobile-layout {
+    display: none;
+  }
+
+  .desktop-layout {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .features-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .feature-box {
+    display: flex;
+    margin: 20px;
+    height: 250px;
+    border: 2px solid black;
+  }
+
+  .feature-sub-box {
+    flex: 1;
+  }
+
+  .feature-sub-box-image {
+    flex: 1;
+    max-width: 350px;
+  }
+
+  .feature-image {
+    flex: 1;
+    width: 350px;
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .feature-sub-box p {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .features-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .features-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
