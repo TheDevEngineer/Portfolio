@@ -21,58 +21,7 @@
     <button onclick="toTopFunction()" id="toTopButton" title="Go to top">
       <span class="material-symbols-outlined">arrow_upward</span>
     </button>
-    <div class="header">
-      <div class="header-left">
-        <a class="header-link" href="index.html" rel="noopener noreferrer">
-          <p class="header-name">Bailey's Portfolio</p>
-        </a>
-      </div>
-      <div class="header-right-desktop">
-        <a class="header-link" href="#projects">Projects</a>
-        <a class="header-link" href="#">CV/R&#201;SUM&#201;</a>
-        <a
-          href="https://www.linkedin.com/in/bailey-kitchen-600657363/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="logo"
-            src="assets/images/LI-In-Bug.png"
-            alt="LinkedIn Logo"
-        /></a>
-        <a
-          href="https://iamagamedev.itch.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="logo"
-            src="assets/images/itchio-logo-textless-black.svg"
-            alt="itch.io Logo"
-        /></a>
-        <a
-          href="https://github.com/IAmAGameDev"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="logo"
-            src="assets/images/github-mark.svg"
-            alt="GitHub Mark"
-        /></a>
-      </div>
-      <div class="header-right-mobile">
-        <a
-          href="https://www.linkedin.com/in/bailey-kitchen-600657363/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="logo"
-            src="assets/images/LI-In-Bug.png"
-            alt="LinkedIn Logo"
-        /></a>
-        <span class="material-symbols-outlined" onclick="changeMobileNav()"
-          >menu</span
-        >
-      </div>
-    </div>
+    <div id="root"></div>
     <div id="mobileNav" class="overlay">
       <div class="overlay-content">
         <a href="#projects" onclick="changeMobileNav()">Projects</a>
@@ -150,7 +99,7 @@
               HTML.
             </p>
             <div class="buttons-div">
-              <a class="link-buttons" href="#">
+              <a class="link-buttons" href="portfolio.html">
                 <span class="material-symbols-outlined link-image"
                   >read_more</span
                 ><span class="link-title">Read More</span>
@@ -420,6 +369,7 @@
         </p>
       </div>
     </div>
+    <script type="module" src="src/main.tsx"></script>
     <script type="module" src="src/js/index.js"></script>
   </body>
 </html>
