@@ -54,3 +54,4 @@ This project utilizes third-party assets under their respective licenses. Specif
 - **file-type-reactjs (file-type-reactjs.svg):** Source: https://iconduck.com/icons/102361/file-type-reactjs, License: MIT License.
 - **trello Icon (trello.svg):** Source: https://iconduck.com/icons/95002/trello, License: Creative Commons Zero V1.0 Universal.
 - **slack Icon (trello.svg):** Source: https://iconduck.com/icons/94899/slack-icon, License: Creative Commons Zero V1.0 Universal.
+- **typescript offical Icon (file-type-typescript-official.svg):** Source: https://iconduck.com/icons/102467/file-type-typescript-official , License: MIT License.
