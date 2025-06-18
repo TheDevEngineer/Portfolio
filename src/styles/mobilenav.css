@@ -1,0 +1,37 @@
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay,
+.overlay-content,
+.overlay a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: flex;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+}

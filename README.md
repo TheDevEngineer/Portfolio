@@ -9,8 +9,15 @@ This page currently uses a default Vite + React template.
 
 ## To-Do List
 
+- [x] Lighthouse Speed & Accessibility Audit
+  - Last tested: 18/6
+  - 100 100 100 100
+  - 0.5s Paints
+- [ ] Fix header links
+- [ ] Add back to top button
+- [ ] Remove muted from the welcome video.
 - [x] Re-create my portfolio.
-- [ ] Seperate the footer to a React module.
+- [x] Seperate the footer to a React module.
 - [ ] Update the videos for my Portfolio (use a image instead maybe) and Cataclysm.
 - [ ] Add my CV.
 - [ ] Start individual page design.

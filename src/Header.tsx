@@ -9,12 +9,12 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
   return (
     <header className='header'>
       <div className='header-left'>
-        <a className='header-link' href='index.html' rel='noopener noreferrer'>
+        <a className='header-link' href='/' rel='noopener noreferrer'>
           <p className='header-name'>Bailey's Portfolio</p>
         </a>
       </div>
       <div className='header-right-desktop'>
-        <a className='header-link' href='index.html#projects'>
+        <a className='header-link' href='/#projects'>
           Projects
         </a>
         <a className='header-link' href='#'>

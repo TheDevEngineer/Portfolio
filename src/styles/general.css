@@ -7,6 +7,9 @@ body {
   margin: 120px 0 0 0;
   padding-top: 0;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 p {
   margin: 0;

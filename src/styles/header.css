@@ -31,7 +31,7 @@
 
 .header-name {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .header-right-mobile {
@@ -55,44 +55,7 @@
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
   font-size: 48px !important;
-}
-
-.overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 100px;
-  left: 0;
-  bottom: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay,
-.overlay-content,
-.overlay a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
   cursor: pointer;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: black;
-  display: flex;
-  transition: 0.3s;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Desktop */
