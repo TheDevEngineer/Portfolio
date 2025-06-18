@@ -1,17 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './styles/index.css';
-import HeaderManager from './HeaderManager.tsx';
-import Footer from './Footer.tsx';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HeaderManager />
-  </StrictMode>
-);
-
-createRoot(document.getElementById('footerHolder')!).render(
-  <StrictMode>
-    <Footer />
+    <BrowserRouter basename='/Portfolio/'>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
