@@ -50,12 +50,6 @@
   text-align: center;
 }
 
-.greenARef,
-.greenARef:visited {
-  word-wrap: break-word;
-  color: green;
-}
-
 /* Features */
 .features-section {
   display: grid;
@@ -112,7 +106,7 @@
 }
 
 .source-code-numbers {
-  width: 30px;
+  width: 40px;
   min-width: 30px;
   padding: 10px 0 10px 10px;
 }
@@ -128,15 +122,18 @@
 
 .source-code-wrapper {
   position: relative;
+  margin: 20px;
 }
 
 .source-code-box-button {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 1px;
+  right: 21px;
   z-index: 2;
   width: 150px;
   height: 30px;
+  border-radius: 5px;
+  border: none;
 }
 
 .language-csharp .db {
@@ -150,6 +147,26 @@
 /* GUI GUIContent EditorGUIUtility Texture2D*/
 .language-csharp .delegates {
   color: #4ec9b0;
+}
+
+.language-css .selector {
+  color: #d7ba7d;
+}
+
+.language-css .brackets {
+  color: #ffc811;
+}
+
+.language-css .blue {
+  color: #9cdcfe;
+}
+
+.language-css .red {
+  color: #ce9178;
+}
+
+.language-css .number {
+  color: #b5cea8;
 }
 
 /* Desktop */

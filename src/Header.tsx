@@ -14,7 +14,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
         </a>
       </div>
       <div className='header-right-desktop'>
-        <a className='header-link' href='/#projects'>
+        <a className='header-link' href='/Portfolio/#projects'>
           Projects
         </a>
         <a className='header-link' href='./portfolio'>

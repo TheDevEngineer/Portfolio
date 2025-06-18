@@ -14,7 +14,7 @@ function MobileNav({ mobileNavOpen, setMobileNavOpen }: Props) {
     >
       <div className='overlay-content'>
         <a
-          href='./Portfolio/#projects'
+          href='/Portfolio/#projects'
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           Projects
