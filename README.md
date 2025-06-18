@@ -12,7 +12,7 @@ This page currently uses a default Vite + React template.
 - [x] Lighthouse Speed & Accessibility Audit
   - Last tested: 18/6
   - 100 100 100 100
-  - 0.5s Paints
+  - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
 - [ ] Fix header links
 - [ ] Add back to top button
 - [ ] Remove muted from the welcome video.
