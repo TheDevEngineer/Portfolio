@@ -1,4 +1,4 @@
-import SourceCodeFlexBox from './sourcecode/portfolio/sourcecodeflexbox';
+import SourceCodeFlexBox from './sourcecode/portfolio/SourceCodeFlexbox';
 import './styles/pages.css';
 
 const componentsMap: { [key: string]: React.ComponentType } = {

@@ -12,8 +12,6 @@ const input: string = `.source-code-box {
   flex: 1;
 }`;
 
-let output: string = input;
-
 function CodeConverter() {
   const [output, setOutput] = useState(input);
   const hasRun = useRef(false);
