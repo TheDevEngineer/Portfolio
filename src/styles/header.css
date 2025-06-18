@@ -21,19 +21,12 @@
   align-items: center;
 }
 
-.header-link,
-.footer-link {
+.header-link {
   text-decoration: none;
   color: black;
 }
-.header-link:visited,
-.footer-link:visited {
+.header-link:visited {
   color: black;
-}
-
-.footer-link,
-.footer-link:visited {
-  text-decoration: underline;
 }
 
 .header-name {
@@ -98,25 +91,6 @@
   color: black;
   display: flex;
   transition: 0.3s;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  border-top: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  z-index: 100;
-}
-
-.footer-left,
-.footer-right {
-  flex: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
 }

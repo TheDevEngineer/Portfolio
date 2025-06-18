@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import { useState } from 'react';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 };
