@@ -14,18 +14,18 @@ function MobileNav({ mobileNavOpen, setMobileNavOpen }: Props) {
     >
       <div className='overlay-content'>
         <a
-          href='/Portfolio/#projects'
+          href='./Portfolio/#projects'
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           Projects
         </a>
-        <a href='#' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+        <a href='./portfolio' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
           CV/R&#201;SUM&#201;
         </a>
         <a
           href='https://iamagamedev.itch.io/'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'
@@ -36,7 +36,7 @@ function MobileNav({ mobileNavOpen, setMobileNavOpen }: Props) {
         <a
           href='https://github.com/IAmAGameDev'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'

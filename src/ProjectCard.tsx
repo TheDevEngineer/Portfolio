@@ -32,34 +32,36 @@ function ProjectCard({
             </span>
             <span className='link-title'>Read More</span>
           </a>
-          <a
-            className='link-buttons'
-            href={itchioLink}
-            target='_blank'
-            rel='noopener noreferrer'
-            style={{ display: !itchioLink ? 'none' : 'block' }}
-          >
-            <img
-              className='link-image'
-              src='assets/images/itchio-logo-textless-black.svg'
-              alt='itch.io Logo'
-            />
-            <span className='link-title'>itch.io</span>
-          </a>
-          <a
-            className='link-buttons'
-            href={githubLink}
-            target='_blank'
-            rel='noopener noreferrer'
-            style={{ display: !githubLink ? 'none' : 'block' }}
-          >
-            <img
-              className='link-image'
-              src='assets/images/github-mark.svg'
-              alt='GitHub Mark'
-            />
-            <span className='link-title'>GitHub</span>
-          </a>
+          {itchioLink && (
+            <a
+              className='link-buttons'
+              href={itchioLink}
+              target='_blank'
+              rel='noopener noreferrer nofollow'
+            >
+              <img
+                className='link-image'
+                src='assets/images/itchio-logo-textless-black.svg'
+                alt='itch.io Logo'
+              />
+              <span className='link-title'>itch.io</span>
+            </a>
+          )}
+          {githubLink && (
+            <a
+              className='link-buttons'
+              href={githubLink}
+              target='_blank'
+              rel='noopener noreferrer nofollow'
+            >
+              <img
+                className='link-image'
+                src='assets/images/github-mark.svg'
+                alt='GitHub Mark'
+              />
+              <span className='link-title'>GitHub</span>
+            </a>
+          )}
         </div>
         <div className='tags-div'>
           {tags.map((item) => (

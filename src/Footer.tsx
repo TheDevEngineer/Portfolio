@@ -9,7 +9,7 @@ function Footer() {
           <a
             href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer nofollow'
           >
             Contact
           </a>
@@ -20,7 +20,7 @@ function Footer() {
           <a
             href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer nofollow'
           >
             LinkedIn
           </a>
@@ -28,7 +28,7 @@ function Footer() {
           <a
             href='https://iamagamedev.itch.io/'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer nofollow'
           >
             itch.io
           </a>
@@ -36,7 +36,7 @@ function Footer() {
           <a
             href='https://github.com/IAmAGameDev'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer nofollow'
           >
             GitHub
           </a>

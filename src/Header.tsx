@@ -9,7 +9,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
   return (
     <header className='header'>
       <div className='header-left'>
-        <a className='header-link' href='/' rel='noopener noreferrer'>
+        <a className='header-link' href='/' rel='noopener noreferrer nofollow'>
           <p className='header-name'>Bailey's Portfolio</p>
         </a>
       </div>
@@ -17,13 +17,13 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
         <a className='header-link' href='/#projects'>
           Projects
         </a>
-        <a className='header-link' href='#'>
+        <a className='header-link' href='./portfolio'>
           CV/R&#201;SUM&#201;
         </a>
         <a
           href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'
@@ -34,7 +34,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
         <a
           href='https://iamagamedev.itch.io/'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'
@@ -45,7 +45,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
         <a
           href='https://github.com/IAmAGameDev'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'
@@ -58,7 +58,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
         <a
           href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener noreferrer nofollow'
         >
           <img
             className='logo'
