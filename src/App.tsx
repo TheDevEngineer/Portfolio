@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { useState } from 'react';
+import './styles/general.css';
 
 const App = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -14,14 +15,8 @@ const App = () => {
       />
       <main className='main-content'>
         <Routes>
-          <Route
-            path='/'
-            element={<h1 style={{ marginTop: '200px' }}>Hello World</h1>}
-          />
-          <Route
-            path='/yes'
-            element={<h1 style={{ marginTop: '200px' }}>Goodbye</h1>}
-          />
+          <Route path='/' element={<h1>Hello World</h1>} />
+          <Route path='/yes' element={<h1>Goodbye</h1>} />
         </Routes>
       </main>
       <Footer />

@@ -1,7 +1,7 @@
-.footer-link {
+.footer a {
   color: black;
 }
-.footer-link:visited {
+.footer a:visited {
   color: black;
 }
 
@@ -16,8 +16,7 @@
   z-index: 100;
 }
 
-.footer-left,
-.footer-right {
+.footer div {
   flex: 1;
   display: flex;
   justify-content: center;
