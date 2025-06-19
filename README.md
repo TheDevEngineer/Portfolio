@@ -14,7 +14,9 @@ This page currently uses a default Vite + React template.
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
 - [ ] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
-- [ ] Fix that you cant click the projects button twice with React Hash Router
+- [ ] Fix the about me button anchor not working and just leading to a blank page
+- [ ] "Source Code Explained: " has no margin right/left on mobile also maybe allow it to be vw responsive as if it does have margin it will break
+- [ ] Fix that you cant click the projects button twice with React Hash Router (occurs in MobileNav too)
 - [ ] Update the video link on Cataclysm page
 - [ ] Add features to the Cataclysm page
 - [ ] Add source code to the Cataclysm page
