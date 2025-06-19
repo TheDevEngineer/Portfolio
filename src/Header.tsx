@@ -9,15 +9,19 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
   return (
     <header className='header'>
       <div className='header-left'>
-        <a className='header-link' href='/' rel='noopener noreferrer nofollow'>
+        <a
+          className='header-link'
+          href='/Portfolio'
+          rel='noopener noreferrer nofollow'
+        >
           <p className='header-name'>Bailey's Portfolio</p>
         </a>
       </div>
       <div className='header-right-desktop'>
-        <a className='header-link' href='/#/#projects'>
+        <a className='header-link' href='/Portfolio/#/#projects'>
           Projects
         </a>
-        <a className='header-link' href='./portfolio'>
+        <a className='header-link' href='/Portfolio/'>
           CV/R&#201;SUM&#201;
         </a>
         <a
