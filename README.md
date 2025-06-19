@@ -13,7 +13,8 @@ This page currently uses a default Vite + React template.
   - Last tested: 18/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
-- [ ] Allow for a string entry into the SourceCodeBox to change the description
+- [x] Allow for a string entry into the SourceCodeBox to change the description
+- [ ] Code the copy code button + effects
 - [ ] Move files back out of the public so they will get compressed
 - [ ] Add back to top button
 - [ ] Remove muted from the welcome video.
