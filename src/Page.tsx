@@ -10,7 +10,7 @@ interface Props {
   itchioLink?: string;
   itchioIFrame?: string;
   features?: FeatureType[];
-  sourceCodes: string[];
+  sourceCodeBoxes: SourceCodeBoxes[];
 }
 
 type FeatureType = {
@@ -18,6 +18,12 @@ type FeatureType = {
   title: string;
   description: string;
   features: string[];
+};
+
+type SourceCodeBoxes = {
+  boxName: string;
+  boxDescription: string;
+  boxLanguage: string;
 };
 
 function Page({
@@ -28,6 +34,7 @@ function Page({
   itchioLink,
   itchioIFrame,
   features,
+  sourceCodeBoxes,
 }: Props) {
   return (
     <>
@@ -151,8 +158,9 @@ function Page({
       <hr className='hr-solid' />
       <div className='source-code-explained'>
         <p className='section-title'>Source Code Explained:</p>
-        <SourceCodeBox language='css' sourceCodes={['SourceCodeFlexBox']} />
-        <SourceCodeBox language='tsx' sourceCodes={['SourceCodeConverter']} />
+        {sourceCodeBoxes.map((key, index) => (
+          <SourceCodeBox key={index} box={key} />
+        ))}
       </div>
     </>
   );
