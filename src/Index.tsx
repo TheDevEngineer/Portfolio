@@ -25,7 +25,7 @@ const projects = [
     projectTitle: 'Cataclysm',
     projectDescription:
       'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
-    readMoreLink: './portfolio',
+    readMoreLink: './cataclysm',
     tags: [
       'C#',
       'Unity',

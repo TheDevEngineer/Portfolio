@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import MobileNav from './MobileNav';
+import ToTopArrow from './ToTopArrow';
 import Index from './Index';
 import ScrollToAnchor from './ScrollToAnchor';
 import Page from './Page';
@@ -26,6 +27,7 @@ const App = () => {
         mobileNavOpen={mobileNavOpen}
         setMobileNavOpen={setMobileNavOpen}
       />
+      <ToTopArrow mobileNavOpen={mobileNavOpen} />
       <main className='main-content'>
         <Routes>
           <Route path='/' element={<Index />} />
@@ -41,6 +43,33 @@ const App = () => {
                 githubLink='https://github.com/IAmAGameDev/Portfolio'
                 itchioLink='https://github.com/IAmAGameDev/Portfolio'
                 itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
+                features={[
+                  {
+                    imageLink: 'assets/images/myImages/TreeViewPNG.png',
+                    title: 'yes',
+                    description: 'yes',
+                    features: ['yes'],
+                  },
+                ]}
+                sourceCodes={['SourceCodeFlexBox']}
+              />
+            }
+          />
+          <Route
+            path='/cataclysm'
+            element={
+              <Page
+                title='Cataclysm'
+                description='This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
+                context='REPLACE'
+                features={[
+                  {
+                    imageLink: 'assets/images/myImages/TreeViewPNG.png',
+                    title: 'yes',
+                    description: 'yes',
+                    features: ['yes'],
+                  },
+                ]}
                 sourceCodes={['SourceCodeFlexBox']}
               />
             }

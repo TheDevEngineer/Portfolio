@@ -1,4 +1,5 @@
 import SourceCodeFlexBox from './sourcecode/portfolio/SourceCodeFlexbox';
+import FeatureCard from './FeatureCard';
 import './styles/pages.css';
 
 const componentsMap: { [key: string]: React.ComponentType } = {
@@ -13,8 +14,16 @@ interface Props {
   githubLink?: string;
   itchioLink?: string;
   itchioIFrame?: string;
+  features?: FeatureType[];
   sourceCodes: string[];
 }
+
+type FeatureType = {
+  imageLink: string;
+  title: string;
+  description: string;
+  features: string[];
+};
 
 function Page({
   title,
@@ -23,6 +32,7 @@ function Page({
   githubLink,
   itchioLink,
   itchioIFrame,
+  features,
   sourceCodes,
 }: Props) {
   return (
@@ -129,12 +139,31 @@ function Page({
         </>
       )}
       <hr className='hr-solid' />
+      {features && features.length > 0 && (
+        <div className='features'>
+          <p className='section-title'>Features:</p>
+          <div className='features-section'>
+            {features.map((key, index) => {
+              return (
+                <FeatureCard
+                  key={index}
+                  imageLink={key.imageLink}
+                  title={key.title}
+                  description={key.description}
+                  features={key.features}
+                />
+              );
+            })}
+          </div>
+        </div>
+      )}
+      <hr className='hr-solid' />
       <div className='source-code-explained'>
         <p className='section-title'>Source Code Explained:</p>
-        {sourceCodes.map((codeKey) => {
-          const Component = componentsMap[codeKey];
+        {sourceCodes.map((key) => {
+          const Component = componentsMap[key];
           if (!Component) return null;
-          return <Component key={codeKey} />;
+          return <Component key={key} />;
         })}
       </div>
     </>
