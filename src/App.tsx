@@ -39,7 +39,35 @@ const App = () => {
                 description='This portfolio is custom coded in HTML, CSS and JavaScript, It also
           uses TypeScript and React. I used to host my old portfolio on Wix,
           however, now I am able to use GitHub pages to host the custom site.'
+                images={[
+                  {
+                    imageLink: 'assets/images/file-type-html.svg',
+                    alt: 'html Icon',
+                  },
+                  {
+                    imageLink: 'assets/images/file-type-css.svg',
+                    alt: 'css Icon',
+                  },
+                  {
+                    imageLink: 'assets/images/file-type-js-official.svg',
+                    alt: 'js Icon',
+                  },
+                  {
+                    imageLink:
+                      'assets/images/file-type-typescript-official.svg',
+                    alt: 'ts Icon',
+                  },
+                  {
+                    imageLink: 'assets/images/Git-Icon-1788C.png',
+                    alt: 'git Icon',
+                  },
+                  {
+                    imageLink: 'assets/images/file-type-reactjs.svg',
+                    alt: 'reactjs Icon',
+                  },
+                ]}
                 context="I created this project to move away from using Wix to host my portfolio as it didn't allow for SEO. Also it has been a fun project to learn new coding languages and frameworks which were required to make these pages dynamic."
+                githubLink='https://github.com/IAmAGameDev/Portfolio'
                 sourceCodeBoxes={[
                   {
                     boxName: 'SourceCodeFlexbox',
@@ -62,8 +90,10 @@ const App = () => {
             element={
               <Page
                 title='Cataclysm'
-                description='This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
-                context='REPLACE'
+                description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
+                videoLink='assets/videos/myVideos/Bloom.mp4'
+                context='This project helped develop my team work skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOB). By communicating effectively as a team we were able to tell what needed implementing next, what the bugs/problems were and how to correctly manage our time to reach the hand in target.'
+                sourcePrivate={true}
                 features={[
                   {
                     imageLink: 'assets/images/myImages/TreeViewPNG.png',
@@ -75,9 +105,8 @@ const App = () => {
                 sourceCodeBoxes={[
                   {
                     boxName: 'SourceCodeFlexbox',
-                    boxDescription:
-                      'My most used thing in this project is the flexbox which uses html and css. Using a flex box is how I achieved the layout for the box below, and many other layout designs on these pages.',
-                    boxLanguage: 'css',
+                    boxDescription: 'REPLACE',
+                    boxLanguage: 'REPLACE',
                   },
                 ]}
               />

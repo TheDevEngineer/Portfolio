@@ -50,6 +50,10 @@
   text-align: center;
 }
 
+.source-private {
+  margin: 20px;
+}
+
 /* Features */
 .features-section {
   display: grid;
@@ -114,7 +118,7 @@
 
 .source-code-box pre {
   margin: 0;
-  padding: 10px 0 10px 0;
+  padding: 10px 10px 10px 0;
 }
 
 .source-code-box code {
