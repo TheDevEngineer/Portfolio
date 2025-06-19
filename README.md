@@ -14,6 +14,7 @@ This page currently uses a default Vite + React template.
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
 - [ ] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
+- [ ] Add a github button to my Portfolio home ProjectCard
 - [ ] Fix the about me button anchor not working and just leading to a blank page
 - [ ] "Source Code Explained: " has no margin right/left on mobile also maybe allow it to be vw responsive as if it does have margin it will break
 - [ ] Fix that you cant click the projects button twice with React Hash Router (occurs in MobileNav too)
@@ -26,7 +27,6 @@ This page currently uses a default Vite + React template.
 - [ ] Remove muted from the welcome video
 - [ ] Update the videos for my Portfolio (use a image instead maybe) and Cataclysm.
 - [ ] Add my CV.
-- [ ] Start individual page design.
 
 ---
 
