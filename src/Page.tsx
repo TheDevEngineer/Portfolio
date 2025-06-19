@@ -1,11 +1,7 @@
-import SourceCodeFlexBox from './sourcecode/portfolio/SourceCodeFlexbox';
+import SourceCodeBox from './sourcecode/SourceCodeBox';
+import SourceCodeFlexbox from './sourcecode/portfolio/SourceCodeFlexbox';
 import FeatureCard from './FeatureCard';
 import './styles/pages.css';
-
-const componentsMap: { [key: string]: React.ComponentType } = {
-  SourceCodeFlexBox: SourceCodeFlexBox,
-  B: SourceCodeFlexBox,
-};
 
 interface Props {
   title: string;
@@ -33,7 +29,6 @@ function Page({
   itchioLink,
   itchioIFrame,
   features,
-  sourceCodes,
 }: Props) {
   return (
     <>
@@ -59,7 +54,7 @@ function Page({
           <img
             className='welcome-image'
             src='assets/images/file-type-typescript-official.svg'
-            alt='css Icon'
+            alt='typescript Icon'
           />
           <img
             className='welcome-image'
@@ -90,32 +85,26 @@ function Page({
             <div className='itchio-and-github'>
               {itchioIFrame && (
                 <iframe
+                  title='Download on itch.io'
                   className='iframe desktop-layout'
                   src={itchioIFrame}
                   width='560'
                   height='175'
-                >
-                  <a
-                    href='https://iamagamedev.itch.io/customunityhierarchy'
-                    target='_blank'
-                    rel='noopener noreferrer nofollow'
-                  >
-                    CustomUnityHierarchy by IAmAGameDev
-                  </a>
-                </iframe>
+                ></iframe>
               )}
               {itchioLink && (
                 <a
                   href={itchioLink}
                   target='_blank'
                   rel='noopener noreferrer nofollow'
+                  aria-label='Visit the project on itch.io'
                 >
                   <img
                     className='iframe mobile-layout'
                     width='175'
                     height='175'
                     src='assets/images/itchio-logo-textless-black.svg'
-                    alt='GitHub Mark'
+                    alt='itchio Logo'
                   />
                 </a>
               )}
@@ -124,6 +113,7 @@ function Page({
                   href={githubLink}
                   target='_blank'
                   rel='noopener noreferrer nofollow'
+                  aria-label='View the source files on GitHub'
                 >
                   <img
                     className='iframe'
@@ -138,33 +128,31 @@ function Page({
           </div>
         </>
       )}
-      <hr className='hr-solid' />
       {features && features.length > 0 && (
-        <div className='features'>
-          <p className='section-title'>Features:</p>
-          <div className='features-section'>
-            {features.map((key, index) => {
-              return (
-                <FeatureCard
-                  key={index}
-                  imageLink={key.imageLink}
-                  title={key.title}
-                  description={key.description}
-                  features={key.features}
-                />
-              );
-            })}
+        <>
+          <hr className='hr-solid' />
+          <div className='features'>
+            <p className='section-title'>Features:</p>
+            <div className='features-section'>
+              {features.map((key, index) => {
+                return (
+                  <FeatureCard
+                    key={index}
+                    imageLink={key.imageLink}
+                    title={key.title}
+                    description={key.description}
+                    features={key.features}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
+        </>
       )}
       <hr className='hr-solid' />
       <div className='source-code-explained'>
         <p className='section-title'>Source Code Explained:</p>
-        {sourceCodes.map((key) => {
-          const Component = componentsMap[key];
-          if (!Component) return null;
-          return <Component key={key} />;
-        })}
+        <SourceCodeBox sourceCodes={['SourceCodeFlexBox']} />
       </div>
     </>
   );

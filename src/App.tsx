@@ -40,17 +40,6 @@ const App = () => {
           uses TypeScript and React. I used to host my old portfolio on Wix,
           however, now I am able to use GitHub pages to host the custom site.'
                 context="I created this project to move away from using Wix to host my portfolio as it didn't allow for SEO. Also it has been a fun project to learn new coding languages and frameworks which were required to make these pages dynamic."
-                githubLink='https://github.com/IAmAGameDev/Portfolio'
-                itchioLink='https://github.com/IAmAGameDev/Portfolio'
-                itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
-                features={[
-                  {
-                    imageLink: 'assets/images/myImages/TreeViewPNG.png',
-                    title: 'yes',
-                    description: 'yes',
-                    features: ['yes'],
-                  },
-                ]}
                 sourceCodes={['SourceCodeFlexBox']}
               />
             }
