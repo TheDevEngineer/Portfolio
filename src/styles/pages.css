@@ -170,6 +170,39 @@
   color: #b5cea8;
 }
 
+/* TSX */
+.language-tsx .function {
+  color: #439ccb;
+}
+
+.language-tsx .name {
+  color: #dcdcaa;
+}
+
+.language-tsx .yellowbracket {
+  color: #ffb516;
+}
+
+.language-tsx .var {
+  color: #9cdcfe;
+}
+
+.language-tsx .delegate {
+  color: #4ec9b0;
+}
+
+.language-tsx .darkvar {
+  color: #4fc1ff;
+}
+
+.language-tsx .pink {
+  color: #da64a1;
+}
+
+.language-tsx .number {
+  color: #b5cea8;
+}
+
 /* Desktop */
 @media only screen and (min-width: 767px) {
   .mobile-layout {

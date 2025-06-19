@@ -1,13 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
 
-const lang: string = `csharp`;
-const input: string = `using UnityEditor;
+const lang: string = `tsx`;
+const input: string = `function ReplaceString(
+  stringToFind: string,
+  stringToReplaceWith: string,
+  modified: string
+) {
+  const finds: number[] = [];
+  for (let i = 0; i < modified.length; i++) {
+    if (modified[i] === stringToFind) {
+      finds.push(i);
+    }
+  }
 
-// We can load the script everytime Unity refreshes with this call:
-[InitializeOnLoad]
-public class StyledHierarchy
-{
-
+  for (let j = finds.length - 1; j >= 0; j--) {
+    const i = finds[j];
+    modified =
+      modified.substring(0, i) +
+      stringToReplaceWith +
+      modified.substring(i + 1);
+  }
+  return modified;
 }`;
 
 function CodeConverter() {
@@ -20,13 +33,13 @@ function CodeConverter() {
     let modified = input;
 
     if (lang === 'css') {
-      modified = Fun('.', "<span className='selector'>.", modified);
-      modified = Fun(
+      modified = ReplaceString('.', "<span className='selector'>.", modified);
+      modified = ReplaceString(
         '{',
         "</span><span className='brackets'>&#123;</span><br /><span className='blue'>",
         modified
       );
-      modified = Fun(':', ':</span>', modified);
+      modified = ReplaceString(':', ':</span>', modified);
       // Determine if the next thing is a number or a letter
 
       const finds: number[] = [];
@@ -73,7 +86,7 @@ function CodeConverter() {
         // else: do nothing for 'Other'
       }
 
-      modified = Fun(
+      modified = ReplaceString(
         '}',
         "<span className='brackets'>&#125;</span><br /><br />",
         modified
@@ -93,7 +106,7 @@ function CodeConverter() {
   );
 }
 
-function Fun(
+function ReplaceString(
   stringToFind: string,
   stringToReplaceWith: string,
   modified: string

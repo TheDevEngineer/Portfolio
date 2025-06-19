@@ -1,5 +1,4 @@
 import SourceCodeBox from './sourcecode/SourceCodeBox';
-import SourceCodeFlexbox from './sourcecode/portfolio/SourceCodeFlexbox';
 import FeatureCard from './FeatureCard';
 import './styles/pages.css';
 
@@ -152,7 +151,8 @@ function Page({
       <hr className='hr-solid' />
       <div className='source-code-explained'>
         <p className='section-title'>Source Code Explained:</p>
-        <SourceCodeBox sourceCodes={['SourceCodeFlexBox']} />
+        <SourceCodeBox language='css' sourceCodes={['SourceCodeFlexBox']} />
+        <SourceCodeBox language='tsx' sourceCodes={['SourceCodeConverter']} />
       </div>
     </>
   );

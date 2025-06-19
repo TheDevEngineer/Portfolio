@@ -1,16 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import SourceCodeFlexbox from './portfolio/SourceCodeFlexbox';
+import SourceCodeConverter from './portfolio/SourceCodeConverter';
 
 interface Props {
   sourceCodes: string[];
+  language: string;
 }
 
 const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeFlexBox: SourceCodeFlexbox,
-  B: SourceCodeFlexbox,
+  SourceCodeConverter: SourceCodeConverter,
 };
 
-function SourceCodeBox({ sourceCodes }: Props) {
+function SourceCodeBox({ sourceCodes, language }: Props) {
   const [lineCount, setLineCount] = useState(0);
 
   const codeRef = useRef<HTMLInputElement | null>(null); // Reference to 2nd code block
@@ -44,7 +46,7 @@ function SourceCodeBox({ sourceCodes }: Props) {
             </code>
           </p>
           <pre>
-            <code className='language-css' ref={codeRef}>
+            <code className={`language-${language}`} ref={codeRef}>
               {sourceCodes.map((key) => {
                 const Component = componentsMap[key];
                 if (!Component) return null;
