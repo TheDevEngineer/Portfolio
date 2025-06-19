@@ -13,14 +13,16 @@ type SourceCodeBoxes = {
 };
 
 const componentsMap: { [key: string]: React.ComponentType } = {
-  SourceCodeFlexBox: SourceCodeFlexbox,
+  SourceCodeFlexbox: SourceCodeFlexbox,
   SourceCodeConverter: SourceCodeConverter,
 };
 
 function SourceCodeBox({ box }: Props) {
   const [lineCount, setLineCount] = useState(0);
 
-  const codeRef = useRef<HTMLInputElement | null>(null); // Reference to 2nd code block
+  const codeRef = useRef<HTMLInputElement | null>(null);
+
+  const Component = componentsMap[box.boxName];
 
   useEffect(() => {
     if (!codeRef.current) {
@@ -35,11 +37,7 @@ function SourceCodeBox({ box }: Props) {
   return (
     <>
       <div>
-        <p className='source-code-text'>
-          My most used thing in this project is the flexbox which uses html and
-          css. Using a flex box how achieved the layout for the box below and
-          many other layout designs on these pages.
-        </p>
+        <p className='source-code-text'>{box.boxDescription}</p>
         <div className='source-code-wrapper'>
           <div className='source-code-box'>
             <p className='source-code-numbers'>
@@ -52,10 +50,9 @@ function SourceCodeBox({ box }: Props) {
               </code>
             </p>
             <pre>
-              <code
-                className={`language-${box.boxLanguage}`}
-                ref={codeRef}
-              ></code>
+              <code className={`language-${box.boxLanguage}`} ref={codeRef}>
+                <Component />
+              </code>
             </pre>
           </div>
           <button className='source-code-box-button'>Copy Code</button>
