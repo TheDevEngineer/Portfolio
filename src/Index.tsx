@@ -7,7 +7,7 @@ const projects = [
     projectTitle: 'My Portfolio',
     projectDescription:
       "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I use to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML.",
-    readMoreLink: './portfolio',
+    readMoreLink: '/#/portfolio',
     tags: [
       'HTML',
       'CSS',
@@ -25,7 +25,7 @@ const projects = [
     projectTitle: 'Cataclysm',
     projectDescription:
       'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
-    readMoreLink: './cataclysm',
+    readMoreLink: '/#/cataclysm',
     tags: [
       'C#',
       'Unity',
@@ -42,7 +42,7 @@ const projects = [
     projectTitle: 'Styled Hierarchy',
     projectDescription:
       'Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one with features such as: tree view, headers, displayed: tags, layers and components.',
-    readMoreLink: './portfolio',
+    readMoreLink: '/',
     itchioLink: 'https://iamagamedev.itch.io/styledhierarchy',
     githubLink: 'https://github.com/IAmAGameDev/StyledHierarchy',
     tags: [
@@ -59,7 +59,7 @@ const projects = [
     projectTitle: 'Styled Project Folders',
     projectDescription:
       'This is a importable custom Unity package (written in c#), that changes the look of the Unity project folders tab. This works by setting a folder and drawing over the top of it with a sprite of your choice, then you can enable header settings along with if it is recursive (applies to children).',
-    readMoreLink: './portfolio',
+    readMoreLink: '/',
     tags: [
       'C#',
       'Unity',
@@ -74,7 +74,7 @@ const projects = [
     projectTitle: 'Suduko Solver',
     projectDescription:
       'When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was to code this solver which uses a recursive algrothim.',
-    readMoreLink: './portfolio',
+    readMoreLink: '/',
     tags: [
       'C#',
       'Unity',
@@ -89,7 +89,7 @@ const projects = [
     projectTitle: 'Bloom',
     projectDescription:
       'Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
-    readMoreLink: './portfolio',
+    readMoreLink: '/',
     tags: [
       'C#',
       'Unity',

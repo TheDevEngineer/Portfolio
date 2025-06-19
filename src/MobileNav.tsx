@@ -13,13 +13,10 @@ function MobileNav({ mobileNavOpen, setMobileNavOpen }: Props) {
       style={{ height: mobileNavOpen ? '100%' : '0%' }}
     >
       <div className='overlay-content'>
-        <a
-          href='/Portfolio/#projects'
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        >
+        <a href='/#/#projects' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
           Projects
         </a>
-        <a href='./portfolio' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+        <a href='/' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
           CV/R&#201;SUM&#201;
         </a>
         <a
