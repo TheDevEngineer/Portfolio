@@ -15,6 +15,8 @@ This page currently uses a default Vite + React template.
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
 - [ ] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
 - [ ] Add a github button to my Portfolio home ProjectCard
+- [ ] Add a dark mode
+- [ ] Fix the mobile overlap on the button and the code on mobile css (my phone)
 - [ ] Fix the about me button anchor not working and just leading to a blank page
 - [ ] "Source Code Explained: " has no margin right/left on mobile also maybe allow it to be vw responsive as if it does have margin it will break
 - [ ] Fix that you cant click the projects button twice with React Hash Router (occurs in MobileNav too)

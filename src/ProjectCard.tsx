@@ -1,5 +1,9 @@
+import MediaSwitcher from './MediaSwitcher';
+
 interface Props {
-  videoPath: string;
+  imageLink: string;
+  imageAlt: string;
+  videoLink: string;
   projectTitle: string;
   projectDescription: string;
   readMoreLink: string;
@@ -9,7 +13,9 @@ interface Props {
 }
 
 function ProjectCard({
-  videoPath,
+  imageLink,
+  imageAlt,
+  videoLink,
   projectTitle,
   projectDescription,
   readMoreLink,
@@ -19,9 +25,11 @@ function ProjectCard({
 }: Props) {
   return (
     <div className='project-div'>
-      <div className='video-container'>
-        <video className='project-video' controls src={videoPath}></video>
-      </div>
+      <MediaSwitcher
+        imageLink={imageLink}
+        imageAlt={imageAlt}
+        videoLink={videoLink}
+      />
       <div className='description-container'>
         <p className='project-title'>{projectTitle}</p>
         <p className='project-description'>{projectDescription}</p>

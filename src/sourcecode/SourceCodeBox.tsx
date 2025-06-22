@@ -20,7 +20,7 @@ const componentsMap: { [key: string]: React.ComponentType } = {
 function SourceCodeBox({ box }: Props) {
   const [lineCount, setLineCount] = useState(0);
 
-  const codeRef = useRef<HTMLInputElement | null>(null);
+  const codeRef = useRef<HTMLElement | null>(null);
 
   const Component = componentsMap[box.boxName];
 
