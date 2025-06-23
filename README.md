@@ -27,7 +27,7 @@ This page currently uses a default Vite + React template.
 - [ ] Move files back out of the public so they will get compressed
 - [ ] Add back to top button
 - [ ] Remove muted from the welcome video
-- [ ] Update the videos for my Portfolio (use a image instead maybe) and Cataclysm.
+- [x] Update the videos for my Portfolio (use a image instead maybe) and Cataclysm.
 - [ ] Add my CV.
 
 ---

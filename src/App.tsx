@@ -5,10 +5,10 @@ import Footer from './Footer';
 import MobileNav from './MobileNav';
 import ToTopArrow from './ToTopArrow';
 import Index from './Index';
-import ScrollToAnchor from './ScrollToAnchor';
 import Page from './Page';
 import CodeConverter from './CodeConverter';
 import './styles/general.css';
+import ScrollToAnchor from './ScrollToAnchor';
 
 const App = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);

@@ -3,7 +3,7 @@ import MediaSwitcher from './MediaSwitcher';
 interface Props {
   imageLink: string;
   imageAlt: string;
-  videoLink: string;
+  videoLink?: string;
   projectTitle: string;
   projectDescription: string;
   readMoreLink: string;

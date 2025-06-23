@@ -1,11 +1,20 @@
 import './styles/Footer.css';
+import ScrollToAnchor from './utils/SmartScrollToAnchor';
 
 function Footer() {
   return (
     <footer className='footer'>
       <div>
         <p>
-          <a href='#about-me'>About</a> &{' '}
+          <a
+            href='#about-me'
+            onClick={(event) =>
+              ScrollToAnchor(event, 'projects', '/Portfolio/')
+            }
+          >
+            About
+          </a>{' '}
+          &{' '}
           <a
             href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
             target='_blank'

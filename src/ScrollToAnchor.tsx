@@ -5,7 +5,6 @@ function ScrollToAnchor() {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {};
     if (location.hash) {
       const id = location.hash.replace('#', '');
       setTimeout(() => {

@@ -66,13 +66,19 @@
   margin: 20px;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
 .project-video,
 .project-image {
   max-width: 100%;
+  height: auto;
 }
 
 .project-image {
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .description-container {

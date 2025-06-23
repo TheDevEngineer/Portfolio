@@ -1,4 +1,5 @@
 import './styles/Header.css';
+import ScrollToAnchor from './utils/SmartScrollToAnchor.ts';
 
 interface Props {
   mobileNavOpen: boolean;
@@ -11,14 +12,18 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
       <div className='header-left'>
         <a
           className='header-link'
-          href='/Portfolio'
+          href='/Portfolio/'
           rel='noopener noreferrer nofollow'
         >
           <p className='header-name'>Bailey's Portfolio</p>
         </a>
       </div>
       <div className='header-right-desktop'>
-        <a className='header-link' href='/Portfolio/#/#projects'>
+        <a
+          className='header-link'
+          href='/Portfolio/#/#projects'
+          onClick={(event) => ScrollToAnchor(event, 'projects', '/Portfolio/')}
+        >
           Projects
         </a>
         <a className='header-link' href='/Portfolio/'>

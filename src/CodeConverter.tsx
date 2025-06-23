@@ -25,7 +25,7 @@ const input: string = `function ReplaceString(
 
 function CodeConverter() {
   const [output, setOutput] = useState(input);
-  const hasRun = useRef(false);
+  const hasRun = useRef<boolean>(false);
   useEffect(() => {
     if (hasRun.current) return;
     hasRun.current = true;

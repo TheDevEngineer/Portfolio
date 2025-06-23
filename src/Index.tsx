@@ -5,7 +5,6 @@ const projects = [
   {
     imageLink: 'assets/images/myImages/Award.jpeg',
     imageAlt: 'Award image',
-    videoLink: 'assets/videos/myVideos/Bloom.mp4',
     projectTitle: 'My Portfolio',
     projectDescription:
       "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I use to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML.",
