@@ -13,8 +13,8 @@ This page currently uses a default Vite + React template.
   - Last tested: 18/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
-- [ ] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
-- [ ] Add a github button to my Portfolio home ProjectCard
+- [x] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
+- [x] Add a github button to my Portfolio home ProjectCard
 - [ ] Add a dark mode
 - [ ] Fix the mobile overlap on the button and the code on mobile css (my phone)
 - [ ] Fix the about me button anchor not working and just leading to a blank page

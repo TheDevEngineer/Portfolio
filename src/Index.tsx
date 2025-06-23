@@ -9,6 +9,7 @@ const projects = [
     projectDescription:
       "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I use to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML.",
     readMoreLink: '/Portfolio/#/portfolio',
+    githubLink: 'https://github.com/IAmAGameDev/Portfolio',
     tags: [
       'HTML',
       'CSS',

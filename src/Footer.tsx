@@ -9,7 +9,7 @@ function Footer() {
           <a
             href='#about-me'
             onClick={(event) =>
-              ScrollToAnchor(event, 'projects', '/Portfolio/')
+              ScrollToAnchor(event, 'about-me', '/Portfolio/')
             }
           >
             About
