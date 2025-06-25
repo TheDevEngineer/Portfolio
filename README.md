@@ -15,15 +15,15 @@ This page currently uses a default Vite + React template.
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
 - [x] Add a SmartScrollToAnchor (which prevents page reload if already on that site)
 - [x] Add a github button to my Portfolio home ProjectCard
-- [ ] Add a dark mode
-- [ ] Fix the mobile overlap on the button and the code on mobile css (my phone)
-- [ ] Fix the about me button anchor not working and just leading to a blank page
+- [x] Fix the mobile overlap on the button and the code on mobile css (my phone)
+- [x] Fix the about me button anchor not working and just leading to a blank page
 - [ ] "Source Code Explained: " has no margin right/left on mobile also maybe allow it to be vw responsive as if it does have margin it will break
 - [ ] Fix that you cant click the projects button twice with React Hash Router (occurs in MobileNav too)
 - [ ] Update the video link on Cataclysm page
 - [ ] Add features to the Cataclysm page
 - [ ] Add source code to the Cataclysm page
 - [ ] Code the copy code button + effects
+  - By effects I mean change the icon + do "Code Copied" + SetTimeout
 - [ ] Move files back out of the public so they will get compressed
 - [ ] Add back to top button
 - [ ] Remove muted from the welcome video

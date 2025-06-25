@@ -73,12 +73,18 @@ const App = () => {
                     boxName: 'SourceCodeFlexbox',
                     boxDescription:
                       'My most used thing in this project is the flexbox which uses html and css. Using a flex box is how I achieved the layout for the box below, and many other layout designs on these pages.',
+                    boxTitle: 'index.css',
+                    boxImg: 'assets/images/file-type-css.svg',
+                    boxImgAlt: 'css Icon',
                     boxLanguage: 'css',
                   },
                   {
                     boxName: 'SourceCodeConverter',
                     boxDescription:
                       "This custom function that I was messing around with is used to convert css to html. I had previously done this in Unity C# to convert my C# code to html which is done via the same effect, making sure that the code that we are converting isn't inside of a comment (which this doesn't do). By using substring, I can insert a <span className'hello'>hello</span> to colourise the text differently with css.",
+                    boxTitle: 'CodeConverter.tsx',
+                    boxImg: 'assets/images/file-type-typescript-official.svg',
+                    boxImgAlt: 'typescript Icon',
                     boxLanguage: 'tsx',
                   },
                 ]}
@@ -106,6 +112,9 @@ const App = () => {
                   {
                     boxName: 'SourceCodeFlexbox',
                     boxDescription: 'REPLACE',
+                    boxTitle: 'REPLACE',
+                    boxImg: 'assets/images/file-type-typescript-official.svg', // REPLACE
+                    boxImgAlt: 'typescript Icon', // REPLACE
                     boxLanguage: 'REPLACE',
                   },
                 ]}

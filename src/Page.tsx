@@ -31,6 +31,9 @@ type FeatureType = {
 type SourceCodeBoxes = {
   boxName: string;
   boxDescription: string;
+  boxTitle: string;
+  boxImg: string;
+  boxImgAlt: string;
   boxLanguage: string;
 };
 

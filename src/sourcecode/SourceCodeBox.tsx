@@ -9,6 +9,9 @@ interface Props {
 type SourceCodeBoxes = {
   boxName: string;
   boxDescription: string;
+  boxTitle: string;
+  boxImg: string;
+  boxImgAlt: string;
   boxLanguage: string;
 };
 
@@ -36,15 +39,26 @@ function SourceCodeBox({ box }: Props) {
 
   return (
     <>
-      <div>
+      <div className='source-code-wrapper'>
         <p className='source-code-text'>{box.boxDescription}</p>
-        <div className='source-code-wrapper'>
-          <div className='source-code-box'>
+        <div className='source-code-box'>
+          <div className='source-code-box-top'>
+            <div className='source-code-box-image-and-text'>
+              <img src={box.boxImg} alt={box.boxImgAlt} width='24px' />
+              <p>{box.boxTitle}</p>
+            </div>
+            <button>
+              Copy Code
+              <span className='material-symbols-outlined'>content_copy</span>
+            </button>
+          </div>
+          <div className='source-code-box-bottom'>
             <p className='source-code-numbers'>
               <code>
                 {Array.from({ length: lineCount }).map((_, index) => (
                   <span key={index}>
-                    {index + 1}.<br />
+                    {index + 1}
+                    <br />
                   </span>
                 ))}
               </code>
@@ -55,7 +69,6 @@ function SourceCodeBox({ box }: Props) {
               </code>
             </pre>
           </div>
-          <button className='source-code-box-button'>Copy Code</button>
         </div>
       </div>
     </>
