@@ -104,22 +104,23 @@
 }
 
 .project-description {
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
   font-size: 12px;
 }
 
 .buttons-div {
-  display: flex;
-  column-gap: 10px;
-  width: 350px;
+  display: block;
+  max-width: 350px;
 }
 
 .link-buttons {
+  display: inline-block;
   padding: 6px;
   border: 1px solid black;
   color: black;
   font-size: 14px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 .link-buttons:visited {
   color: black;
