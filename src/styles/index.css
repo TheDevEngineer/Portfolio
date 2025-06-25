@@ -66,6 +66,19 @@
   margin: 20px;
 }
 
+.portfolio-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 420px;
+  max-width: 100%;
+}
+.portfolio-div img {
+  width: 140px;
+  height: 140px;
+  max-width: 100%;
+  height: auto;
+}
+
 .video-container {
   display: flex;
   justify-content: center;

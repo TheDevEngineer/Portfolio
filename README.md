@@ -16,11 +16,7 @@ This page currently uses a default Vite + React template.
 - [ ] Update the video link on Cataclysm page
 - [ ] Add features to the Cataclysm page
 - [ ] Add source code to the Cataclysm page
-- [ ] Code the copy code button + effects
-  - By effects I mean change the icon + do "Code Copied" + SetTimeout
 - [ ] Move files back out of the public so they will get compressed?
-- [x] Remove muted from the welcome video
-- [ ] Update the image for my Portfolio not sure what to maybe a bunch of images of the languages?
 - [ ] Add my CV.
 
 ---

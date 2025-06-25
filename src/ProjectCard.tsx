@@ -1,8 +1,8 @@
 import MediaSwitcher from './MediaSwitcher';
 
 interface Props {
-  imageLink: string;
-  imageAlt: string;
+  imageLink?: string;
+  imageAlt?: string;
   videoLink?: string;
   projectTitle: string;
   projectDescription: string;
@@ -25,11 +25,29 @@ function ProjectCard({
 }: Props) {
   return (
     <div className='project-div'>
-      <MediaSwitcher
-        imageLink={imageLink}
-        imageAlt={imageAlt}
-        videoLink={videoLink}
-      />
+      {!imageLink && !imageAlt && !videoLink && (
+        <div className='portfolio-div'>
+          <img src='assets/images/file-type-html.svg' alt='html icon' />
+          <img src='assets/images/file-type-css.svg' alt='css icon' />
+          <img
+            src='assets/images/file-type-js-official.svg'
+            alt='javascript icon'
+          />
+          <img
+            src='assets/images/file-type-typescript-official.svg'
+            alt='typescript icon'
+          />
+          <img src='assets/images/Git-Icon-1788C.png' alt='git icon' />
+          <img src='assets/images/file-type-reactjs.svg' alt='react icon' />
+        </div>
+      )}
+      {imageLink && imageAlt && videoLink && (
+        <MediaSwitcher
+          imageLink={imageLink}
+          imageAlt={imageAlt}
+          videoLink={videoLink}
+        />
+      )}
       <div className='description-container'>
         <p className='project-title'>{projectTitle}</p>
         <p className='project-description'>{projectDescription}</p>
