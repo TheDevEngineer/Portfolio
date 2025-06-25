@@ -47,7 +47,13 @@ function SourceCodeBox({ box }: Props) {
               <img src={box.boxImg} alt={box.boxImgAlt} width='24px' />
               <p>{box.boxTitle}</p>
             </div>
-            <button>
+            <button
+              onClick={() => {
+                if (codeRef.current) {
+                  navigator.clipboard.writeText(codeRef.current.innerText);
+                }
+              }}
+            >
               Copy Code
               <span className='material-symbols-outlined'>content_copy</span>
             </button>

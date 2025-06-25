@@ -13,16 +13,13 @@ This page currently uses a default Vite + React template.
   - Last tested: 18/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
-- [x] "Source Code Explained: " has no margin right/left on mobile also maybe allow it to be vw responsive as if it does have margin it will break
-- [ ] Fix that you cant click the projects button twice with React Hash Router (occurs in MobileNav too)
 - [ ] Update the video link on Cataclysm page
 - [ ] Add features to the Cataclysm page
 - [ ] Add source code to the Cataclysm page
 - [ ] Code the copy code button + effects
   - By effects I mean change the icon + do "Code Copied" + SetTimeout
-- [ ] Move files back out of the public so they will get compressed
-- [ ] Add back to top button
-- [ ] Remove muted from the welcome video
+- [ ] Move files back out of the public so they will get compressed?
+- [x] Remove muted from the welcome video
 - [ ] Update the image for my Portfolio not sure what to maybe a bunch of images of the languages?
 - [ ] Add my CV.
 

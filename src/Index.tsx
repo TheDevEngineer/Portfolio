@@ -115,7 +115,6 @@ const projects = [
 function Index() {
   return (
     <>
-      {/* Hello World */}
       <div className='welcome'>
         <div className='welcome-section'>
           <p className='welcome-section-name'>Bailey</p>
@@ -127,7 +126,6 @@ function Index() {
             controls
             autoPlay
             loop
-            muted
             src='assets/videos/myVideos/Bloom.mp4'
             width='420'
           ></video>
