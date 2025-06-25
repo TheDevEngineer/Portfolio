@@ -59,6 +59,7 @@ function Page({
           <video
             className='welcome-video'
             autoPlay
+            controls
             loop
             muted
             src={videoLink}

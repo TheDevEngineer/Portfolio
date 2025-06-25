@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import SourceCodeFlexbox from './portfolio/SourceCodeFlexbox';
 import SourceCodeConverter from './portfolio/SourceCodeConverter';
+import SourceCodeEnemy from './portfolio/SourceCodeEnemy';
 
 interface Props {
   box: SourceCodeBoxes;
@@ -18,6 +19,7 @@ type SourceCodeBoxes = {
 const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeFlexbox: SourceCodeFlexbox,
   SourceCodeConverter: SourceCodeConverter,
+  SourceCodeEnemy: SourceCodeEnemy,
 };
 
 function SourceCodeBox({ box }: Props) {
@@ -70,7 +72,10 @@ function SourceCodeBox({ box }: Props) {
               }}
             >
               <span ref={buttonTextRef}>Copy Code</span>
-              <span ref={buttonIconRef} className='material-symbols-outlined'>
+              <span
+                ref={buttonIconRef}
+                className='material-symbols-outlined mso-copy'
+              >
                 content_copy
               </span>
             </button>

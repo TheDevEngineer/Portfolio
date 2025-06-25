@@ -98,7 +98,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
             />
           </a>
           <span
-            className='material-symbols-outlined menu'
+            className='material-symbols-outlined mso-menu'
             onClick={() => setMobileNavOpen(!mobileNavOpen)}
           >
             menu

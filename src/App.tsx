@@ -97,25 +97,26 @@ const App = () => {
               <Page
                 title='Cataclysm'
                 description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
-                videoLink='assets/videos/myVideos/Bloom.mp4'
+                videoLink='assets/videos/myVideos/Bloom.mp4' // REPLACE
                 context='This project helped develop my team work skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOB). By communicating effectively as a team we were able to tell what needed implementing next, what the bugs/problems were and how to correctly manage our time to reach the hand in target.'
                 sourcePrivate={true}
                 features={[
                   {
-                    imageLink: 'assets/images/myImages/TreeViewPNG.png',
-                    title: 'yes',
-                    description: 'yes',
-                    features: ['yes'],
+                    imageLink: 'assets/images/myImages/TreeViewPNG.png', // REPLACE
+                    title: '2.5D Player View',
+                    description:
+                      '2D Character within a 3D world. Fun integration challenge with multiple cameras, animations and enemies.',
+                    features: ['2D Character,', '3D World.'],
                   },
                 ]}
                 sourceCodeBoxes={[
                   {
-                    boxName: 'SourceCodeFlexbox',
-                    boxDescription: 'REPLACE',
-                    boxTitle: 'REPLACE',
-                    boxImg: 'assets/images/file-type-typescript-official.svg', // REPLACE
-                    boxImgAlt: 'typescript Icon', // REPLACE
-                    boxLanguage: 'REPLACE',
+                    boxName: 'SourceCodeEnemy', // MAKE + REPLACE
+                    boxDescription: 'REPLACE', // REPLACE
+                    boxTitle: 'REPLACE', // REPLACE
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon', // REPLACE
+                    boxLanguage: 'csharp',
                   },
                 ]}
               />

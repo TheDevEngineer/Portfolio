@@ -1,4 +1,4 @@
-.material-symbols-outlined menu {
+.mso-copy {
   font-size: 24px !important;
 }
 
@@ -175,10 +175,50 @@
 }
 
 /* GUI GUIContent EditorGUIUtility Texture2D*/
+.language-csharp .db {
+  color: #569cd6;
+}
+
+.language-csharp .comment {
+  color: #008000;
+}
+
+.language-csharp .r {
+  color: #d6976b;
+}
+
+.language-csharp .lb {
+  color: #9cdcfe;
+}
+
+.language-csharp .y {
+  color: #dcdcaa;
+}
+
+/* Log */
+.language-csharp .locals {
+  color: #dcdcdc;
+}
+
+.language-csharp .p {
+  color: #d8a0df;
+}
+
+.language-csharp .numbers {
+  color: #b5c98e;
+}
+
+/* Mathf Color */
+.language-csharp .struct {
+  color: #86c691;
+}
+
+/* GUI GUIContent EditorGUIUtility Texture2D*/
 .language-csharp .delegates {
   color: #4ec9b0;
 }
 
+/* CSS */
 .language-css .selector {
   color: #d7ba7d;
 }
