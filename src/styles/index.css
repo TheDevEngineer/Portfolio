@@ -110,7 +110,6 @@
 
 .buttons-div {
   display: block;
-  max-width: 350px;
 }
 
 .link-buttons {
@@ -119,8 +118,7 @@
   border: 1px solid black;
   color: black;
   font-size: 14px;
-  margin-right: 5px;
-  margin-top: 5px;
+  margin: 5px 5px 0 0;
 }
 .link-buttons:visited {
   color: black;
@@ -262,10 +260,6 @@
 
   .description-container {
     max-width: 460px;
-  }
-
-  .link-buttons {
-    margin-right: 0px;
   }
 }
 
