@@ -32,8 +32,8 @@
 }
 
 .section-title {
-  margin-top: 10px;
-  font-size: 40px;
+  margin: 10px 20px;
+  font-size: 7vw;
   font-style: italic;
   font-weight: 500;
 }
@@ -275,6 +275,10 @@
 
   .feature-sub-box p {
     text-align: start;
+  }
+
+  .section-title {
+    font-size: 40px;
   }
 }
 
