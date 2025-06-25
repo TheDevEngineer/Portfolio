@@ -24,6 +24,8 @@ function SourceCodeBox({ box }: Props) {
   const [lineCount, setLineCount] = useState(0);
 
   const codeRef = useRef<HTMLElement | null>(null);
+  const buttonTextRef = useRef<HTMLElement | null>(null);
+  const buttonIconRef = useRef<HTMLElement | null>(null);
 
   const Component = componentsMap[box.boxName];
 
@@ -49,13 +51,28 @@ function SourceCodeBox({ box }: Props) {
             </div>
             <button
               onClick={() => {
-                if (codeRef.current) {
-                  navigator.clipboard.writeText(codeRef.current.innerText);
+                if (!codeRef.current) {
+                  return;
                 }
+                navigator.clipboard.writeText(codeRef.current.innerText);
+                if (!buttonTextRef.current || !buttonIconRef.current) {
+                  return;
+                }
+                buttonTextRef.current.textContent = 'Code Copied';
+                buttonIconRef.current.textContent = 'task_alt';
+                setTimeout(() => {
+                  if (!buttonTextRef.current || !buttonIconRef.current) {
+                    return;
+                  }
+                  buttonTextRef.current.textContent = 'Copy Code';
+                  buttonIconRef.current.textContent = 'content_copy';
+                }, 1000);
               }}
             >
-              Copy Code
-              <span className='material-symbols-outlined'>content_copy</span>
+              <span ref={buttonTextRef}>Copy Code</span>
+              <span ref={buttonIconRef} className='material-symbols-outlined'>
+                content_copy
+              </span>
             </button>
           </div>
           <div className='source-code-box-bottom'>
