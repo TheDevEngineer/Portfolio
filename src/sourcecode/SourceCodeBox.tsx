@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import SourceCodeFlexbox from './portfolio/SourceCodeFlexbox';
 import SourceCodeConverter from './portfolio/SourceCodeConverter';
-import SourceCodeEnemy from './portfolio/SourceCodeEnemy';
+import SourceCodeHealthManagerSO from './portfolio/SourceCodeHealthManagerSO';
+import SourceCodeRenderEnablerEditor from './portfolio/SourceCodeRenderEnablerEditor';
 
 interface Props {
   box: SourceCodeBoxes;
@@ -19,7 +20,8 @@ type SourceCodeBoxes = {
 const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeFlexbox: SourceCodeFlexbox,
   SourceCodeConverter: SourceCodeConverter,
-  SourceCodeEnemy: SourceCodeEnemy,
+  SourceCodeHealthManagerSO: SourceCodeHealthManagerSO,
+  SourceCodeRenderEnablerEditor: SourceCodeRenderEnablerEditor,
 };
 
 function SourceCodeBox({ box }: Props) {

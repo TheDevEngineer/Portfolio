@@ -97,25 +97,56 @@ const App = () => {
               <Page
                 title='Cataclysm'
                 description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
-                videoLink='assets/videos/myVideos/Bloom.mp4' // REPLACE
+                videoIFrameLink='https://youtube.com/embed/UARZzjsFQg8'
                 context='This project helped develop my team work skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOB). By communicating effectively as a team we were able to tell what needed implementing next, what the bugs/problems were and how to correctly manage our time to reach the hand in target.'
                 sourcePrivate={true}
                 features={[
                   {
-                    imageLink: 'assets/images/myImages/TreeViewPNG.png', // REPLACE
-                    title: '2.5D Player View',
+                    imageLink: 'assets/images/myImages/Cataclysm2.5D.png',
+                    title: '2.5D Player View:',
                     description:
                       '2D Character within a 3D world. Fun integration challenge with multiple cameras, animations and enemies.',
                     features: ['2D Character,', '3D World.'],
                   },
+                  {
+                    imageLink: 'assets/images/myImages/CataclysmMinigames.png',
+                    title: 'Minigames:',
+                    description:
+                      'Mix of both 2D and 3D minigames, my involvement within the team was to create the base mechanics allowing us to customise later.',
+                    features: [
+                      'Vent Screw Task,',
+                      'Navigation Ship Flying Task.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/CataclysmMinigamesTwo.png',
+                    title: 'More Minigames:',
+                    description:
+                      'My second favourite minigame is the morse code. This was done by translating dots and dashes via a dictonary lookup into letters.',
+                    features: [
+                      'Reboot Pod Systems Task,',
+                      'Morse Code Send Task.',
+                    ],
+                  },
                 ]}
                 sourceCodeBoxes={[
                   {
-                    boxName: 'SourceCodeEnemy', // MAKE + REPLACE
-                    boxDescription: 'REPLACE', // REPLACE
-                    boxTitle: 'REPLACE', // REPLACE
+                    boxName: 'SourceCodeHealthManagerSO',
+                    boxDescription:
+                      'Below is a custom ScriptableObject that was used to handle player health. In a parent player script, we can create an instance of this ScriptableObject per player. This allows us to call DecreaseHealth whenever we collide with an enemy which will Invoke a healthChangeEvent method to tell effects/the UIManager to update the health, and flash a blood effect on screen.',
+                    boxTitle: 'HealthManagerScriptableObject.cs',
                     boxImg: 'assets/images/csharpIcon.png',
-                    boxImgAlt: 'csharp Icon', // REPLACE
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                  {
+                    boxName: 'SourceCodeRenderEnablerEditor',
+                    boxDescription:
+                      'This script was used to disable and enable the 3D world before playing. This is because we were loading it during runtime with colliders on the player, whilst fading in the blocks to create an illusion of that the player no longer knows their own spaceship. So, for testing and development, we would need to swap between seeing the world and hiding it depending on if we were playtesting or developing the scene therefore, to do this easier, I created this script.',
+                    boxTitle: 'RenderEnablerEditor.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
                     boxLanguage: 'csharp',
                   },
                 ]}

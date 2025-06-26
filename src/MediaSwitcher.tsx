@@ -4,51 +4,47 @@ interface Props {
   imageLink: string;
   imageAlt: string;
   videoLink?: string;
+  videoIFrameLink?: string;
 }
 
-function MediaSwitcher({ imageLink, imageAlt, videoLink }: Props) {
+function MediaSwitcher({
+  imageLink,
+  imageAlt,
+  videoLink,
+  videoIFrameLink,
+}: Props) {
   const [successfulVideoLoad, setSuccessfulVideoLoad] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const imageRef = useRef<HTMLImageElement | null>(null);
-  const hasReloadedVideo = useRef<boolean>(false);
+  const hasReloaded = useRef<boolean>(false);
 
   useEffect(() => {
-    if (!videoLink) {
-      // If there is no video link don't swap just display an image
-      return;
-    }
-
-    const handleVideoSwap = function () {
-      if (videoRef.current && imageRef.current) {
-        videoRef.current.style.display = 'block';
-        imageRef.current.style.display = 'none';
+    if (videoLink && videoRef.current) {
+      const handleVideoSwap = function () {
         setSuccessfulVideoLoad(true);
-      }
-    };
+      };
 
-    const handleError = function () {
-      if (videoRef.current) {
-        if (!hasReloadedVideo.current) {
-          hasReloadedVideo.current = true;
-          videoRef.current.load(); // Try re-load
+      const handleError = function () {
+        if (!hasReloaded.current) {
+          hasReloaded.current = true;
+          videoRef.current?.load(); // Try re-load
         } // Else, failed 2nd time so just display image
-      }
-    };
+      };
 
-    if (!videoRef.current) {
-      return;
+      const vid = videoRef.current;
+
+      vid.addEventListener('loadeddata', handleVideoSwap);
+      vid.addEventListener('error', handleError);
+
+      return () => {
+        vid.removeEventListener('loadeddata', handleVideoSwap);
+        vid.removeEventListener('error', handleError);
+      };
     }
+  }, [videoLink]);
 
-    videoRef.current.addEventListener('loadeddata', handleVideoSwap);
-    videoRef.current.addEventListener('error', handleError);
-
-    return () => {
-      if (videoRef.current) {
-        videoRef.current.removeEventListener('loadeddata', handleVideoSwap);
-        videoRef.current.removeEventListener('error', handleError);
-      }
-    };
-  }, []);
+  const handleIFrameLoad = () => {
+    setSuccessfulVideoLoad(true);
+  };
 
   return (
     <div className='video-container'>
@@ -57,8 +53,10 @@ function MediaSwitcher({ imageLink, imageAlt, videoLink }: Props) {
           className='project-image'
           src={imageLink}
           alt={imageAlt}
-          ref={imageRef}
-          style={{ margin: 'fill' }}
+          style={{
+            display: successfulVideoLoad ? 'none' : 'block',
+            margin: 'fill',
+          }}
         />
       )}
       {videoLink && (
@@ -66,9 +64,22 @@ function MediaSwitcher({ imageLink, imageAlt, videoLink }: Props) {
           className='project-video'
           controls
           src={videoLink}
-          style={{ display: 'none' }}
           ref={videoRef}
+          style={{
+            display: successfulVideoLoad ? 'block' : 'none',
+          }}
         ></video>
+      )}
+      {videoIFrameLink && (
+        <iframe
+          className='project-video'
+          src={videoIFrameLink}
+          onLoad={handleIFrameLoad}
+          allowFullScreen
+          style={{
+            display: successfulVideoLoad ? 'block' : 'none',
+          }}
+        />
       )}
     </div>
   );

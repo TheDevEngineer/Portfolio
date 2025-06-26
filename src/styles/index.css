@@ -84,12 +84,14 @@
 .video-container {
   display: flex;
   justify-content: center;
+  height: 230px;
 }
 
 .project-video,
 .project-image {
   max-width: 100%;
   height: auto;
+  width: 420px;
 }
 
 .project-image {

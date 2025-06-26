@@ -4,6 +4,7 @@ interface Props {
   imageLink?: string;
   imageAlt?: string;
   videoLink?: string;
+  videoIFrameLink?: string;
   projectTitle: string;
   projectDescription: string;
   readMoreLink: string;
@@ -16,6 +17,7 @@ function ProjectCard({
   imageLink,
   imageAlt,
   videoLink,
+  videoIFrameLink,
   projectTitle,
   projectDescription,
   readMoreLink,
@@ -41,11 +43,12 @@ function ProjectCard({
           <img src='assets/images/file-type-reactjs.svg' alt='react icon' />
         </div>
       )}
-      {imageLink && imageAlt && videoLink && (
+      {imageLink && imageAlt && (videoLink || videoIFrameLink) && (
         <MediaSwitcher
           imageLink={imageLink}
           imageAlt={imageAlt}
           videoLink={videoLink}
+          videoIFrameLink={videoIFrameLink}
         />
       )}
       <div className='description-container'>

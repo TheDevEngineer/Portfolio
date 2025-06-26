@@ -5,6 +5,7 @@ import './styles/pages.css';
 interface Props {
   title: string;
   description: string;
+  videoIFrameLink?: string;
   videoLink?: string;
   images?: ImagesAndAlt[];
   context: string;
@@ -40,6 +41,7 @@ type SourceCodeBoxes = {
 function Page({
   title,
   description,
+  videoIFrameLink,
   videoLink,
   images,
   context,
@@ -79,6 +81,13 @@ function Page({
               );
             })}
           </div>
+        )}
+        {videoIFrameLink && (
+          <iframe
+            className='welcome-video'
+            src={videoIFrameLink}
+            allowFullScreen
+          />
         )}
       </div>
       <hr className='hr-solid' />

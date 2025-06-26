@@ -1,5 +1,6 @@
 import './styles/index.css';
 import ProjectCard from './ProjectCard';
+import MediaSwitcher from './MediaSwitcher';
 
 const projects = [
   {
@@ -21,9 +22,9 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg',
-    imageAlt: 'Award image',
-    videoLink: 'assets/videos/myVideos/Bloom.mp4',
+    imageLink: 'assets/images/myImages/Cataclysm2.5D.png',
+    imageAlt: 'Cataclysm image',
+    videoIFrameLink: 'https://youtube.com/embed/6_uGLtb_7vo',
     projectTitle: 'Cataclysm',
     projectDescription:
       'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
@@ -93,9 +94,9 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg',
-    imageAlt: 'Award image',
-    videoLink: 'assets/videos/myVideos/Bloom.mp4',
+    imageLink: 'assets/images/myImages/Award.jpeg', // REPLACE
+    imageAlt: 'Award image', // REPLACE
+    videoIFrameLink: 'https://youtube.com/embed/UARZzjsFQg8',
     projectTitle: 'Bloom',
     projectDescription:
       'Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
@@ -119,15 +120,11 @@ function Index() {
           <p className='welcome-section-title'>Junior Software Engineer</p>
         </div>
         <div className='welcome-video-section'>
-          <video
-            muted
-            className='welcome-video'
-            controls
-            autoPlay
-            loop
-            src='assets/videos/myVideos/Bloom.mp4'
-            width='420'
-          ></video>
+          <MediaSwitcher
+            imageLink='assets/images/myImages/Cataclysm2.5D.png'
+            imageAlt='Cataclysm2.5D'
+            videoIFrameLink='https://youtube.com/embed/6_uGLtb_7vo'
+          />
         </div>
       </div>
       <a id='about-me' className='anchor'></a>
@@ -155,6 +152,7 @@ function Index() {
               imageLink={item.imageLink}
               imageAlt={item.imageAlt}
               videoLink={item.videoLink}
+              videoIFrameLink={item.videoIFrameLink}
               projectTitle={item.projectTitle}
               projectDescription={item.projectDescription}
               readMoreLink={item.readMoreLink}
