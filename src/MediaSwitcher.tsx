@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import LazyYoutube from './LazyYoutube';
 
 interface Props {
   imageLink: string;
@@ -42,13 +43,9 @@ function MediaSwitcher({
     }
   }, [videoLink]);
 
-  const handleIFrameLoad = () => {
-    setSuccessfulVideoLoad(true);
-  };
-
   return (
     <div className='video-container'>
-      {!successfulVideoLoad && (
+      {!successfulVideoLoad && !videoIFrameLink && (
         <img
           className='project-image'
           src={imageLink}
@@ -70,20 +67,7 @@ function MediaSwitcher({
           }}
         ></video>
       )}
-      {videoIFrameLink && (
-        <iframe
-          className='project-video'
-          src={videoIFrameLink}
-          onLoad={handleIFrameLoad}
-          title='YouTube video player'
-          referrerPolicy='strict-origin-when-cross-origin'
-          allow='encrypted-media'
-          allowFullScreen
-          style={{
-            display: successfulVideoLoad ? 'block' : 'none',
-          }}
-        />
-      )}
+      {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}
     </div>
   );
 }

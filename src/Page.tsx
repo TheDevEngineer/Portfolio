@@ -90,6 +90,7 @@ function Page({
             allow='encrypted-media'
             title='YouTube video player'
             referrerPolicy='strict-origin-when-cross-origin'
+            loading='lazy'
           />
         )}
       </div>
@@ -122,6 +123,7 @@ function Page({
                     src={itchioIFrame}
                     width='560'
                     height='175'
+                    loading='lazy'
                   ></iframe>
                 )}
                 {itchioLink && (

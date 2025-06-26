@@ -11,9 +11,9 @@ This page currently uses a default Vite + React template.
 
 - [x] Lighthouse Speed & Accessibility Audit
   - Last tested: 26/6
-  - 921 100 96 100
-  - 0.4s First Contentful Paint - 1.9s Largest Contentful Paint
-  - 96 Best Practices - Cookies from YouTube even with -nocookie
+  - 100 100 100 100
+  - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
+- [ ] Look into synced faked controls maybe by also "Lazy" loading the other videos
 - [ ] Fix the source code block flex title not working on mobile maybe make it vw on mobile for the title just to fix this?
 - [ ] Swap and animate the mobile menu icon
 - [ ] Move files back out of the public so they will get compressed?
