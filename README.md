@@ -10,15 +10,12 @@ This page currently uses a default Vite + React template.
 ## To-Do List
 
 - [x] Lighthouse Speed & Accessibility Audit
-  - Last tested: 18/6
-  - 100 100 100 100
-  - 0.4s First Contentful Paint - 0.5s Largest Contentful Paint
+  - Last tested: 26/6
+  - 921 100 96 100
+  - 0.4s First Contentful Paint - 1.9s Largest Contentful Paint
+  - 96 Best Practices - Cookies from YouTube even with -nocookie
 - [ ] Fix the source code block flex title not working on mobile maybe make it vw on mobile for the title just to fix this?
-- [x] Fix the header not shrinking down below 370px? FOUND IT, THE GITHUB READMORE BUTTONS DONT WRAP TO NEW PAGE THEREFORE USE 20PX MARGIN + 350PX SPACE
 - [ ] Swap and animate the mobile menu icon
-- [ ] Update the video link on Cataclysm page
-- [ ] Add features to the Cataclysm page
-- [ ] Add source code to the Cataclysm page
 - [ ] Move files back out of the public so they will get compressed?
 - [ ] Add my CV.
 

@@ -87,6 +87,9 @@ function Page({
             className='welcome-video'
             src={videoIFrameLink}
             allowFullScreen
+            allow='encrypted-media'
+            title='YouTube video player'
+            referrerPolicy='strict-origin-when-cross-origin'
           />
         )}
       </div>

@@ -97,19 +97,19 @@ const App = () => {
               <Page
                 title='Cataclysm'
                 description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
-                videoIFrameLink='https://youtube.com/embed/UARZzjsFQg8'
+                videoIFrameLink='https://www.youtube-nocookie.com/embed/UARZzjsFQg8'
                 context='This project helped develop my team work skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOB). By communicating effectively as a team we were able to tell what needed implementing next, what the bugs/problems were and how to correctly manage our time to reach the hand in target.'
                 sourcePrivate={true}
                 features={[
                   {
-                    imageLink: 'assets/images/myImages/Cataclysm2.5D.png',
+                    imageLink: 'assets/images/myImages/Cataclysm2.5D.webp',
                     title: '2.5D Player View:',
                     description:
                       '2D Character within a 3D world. Fun integration challenge with multiple cameras, animations and enemies.',
                     features: ['2D Character,', '3D World.'],
                   },
                   {
-                    imageLink: 'assets/images/myImages/CataclysmMinigames.png',
+                    imageLink: 'assets/images/myImages/CataclysmMinigames.webp',
                     title: 'Minigames:',
                     description:
                       'Mix of both 2D and 3D minigames, my involvement within the team was to create the base mechanics allowing us to customise later.',
@@ -120,7 +120,7 @@ const App = () => {
                   },
                   {
                     imageLink:
-                      'assets/images/myImages/CataclysmMinigamesTwo.png',
+                      'assets/images/myImages/CataclysmMinigamesTwo.webp',
                     title: 'More Minigames:',
                     description:
                       'My second favourite minigame is the morse code. This was done by translating dots and dashes via a dictonary lookup into letters.',

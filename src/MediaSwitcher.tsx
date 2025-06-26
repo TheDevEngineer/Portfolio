@@ -75,6 +75,9 @@ function MediaSwitcher({
           className='project-video'
           src={videoIFrameLink}
           onLoad={handleIFrameLoad}
+          title='YouTube video player'
+          referrerPolicy='strict-origin-when-cross-origin'
+          allow='encrypted-media'
           allowFullScreen
           style={{
             display: successfulVideoLoad ? 'block' : 'none',

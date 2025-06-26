@@ -22,9 +22,9 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Cataclysm2.5D.png',
+    imageLink: 'assets/images/myImages/Cataclysm2.5D.webp',
     imageAlt: 'Cataclysm image',
-    videoIFrameLink: 'https://youtube.com/embed/6_uGLtb_7vo',
+    videoIFrameLink: 'https://www.youtube-nocookie.com/embed/6_uGLtb_7vo',
     projectTitle: 'Cataclysm',
     projectDescription:
       'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
@@ -96,7 +96,7 @@ const projects = [
   {
     imageLink: 'assets/images/myImages/Award.jpeg', // REPLACE
     imageAlt: 'Award image', // REPLACE
-    videoIFrameLink: 'https://youtube.com/embed/UARZzjsFQg8',
+    videoIFrameLink: 'https://www.youtube-nocookie.com/embed/UARZzjsFQg8',
     projectTitle: 'Bloom',
     projectDescription:
       'Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
@@ -121,9 +121,9 @@ function Index() {
         </div>
         <div className='welcome-video-section'>
           <MediaSwitcher
-            imageLink='assets/images/myImages/Cataclysm2.5D.png'
+            imageLink='assets/images/myImages/Cataclysm2.5D.webp'
             imageAlt='Cataclysm2.5D'
-            videoIFrameLink='https://youtube.com/embed/6_uGLtb_7vo'
+            videoIFrameLink='https://www.youtube-nocookie.com/embed/6_uGLtb_7vo'
           />
         </div>
       </div>
