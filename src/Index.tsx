@@ -47,7 +47,7 @@ const projects = [
     projectTitle: 'Styled Hierarchy',
     projectDescription:
       'Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one with features such as: tree view, headers, displayed: tags, layers and components.',
-    readMoreLink: '/Portfolio/',
+    readMoreLink: '/Portfolio/#/styledhierarchy',
     itchioLink: 'https://iamagamedev.itch.io/styledhierarchy',
     githubLink: 'https://github.com/IAmAGameDev/StyledHierarchy',
     tags: [

@@ -6,7 +6,6 @@ import MobileNav from './MobileNav';
 import ToTopArrow from './ToTopArrow';
 import Index from './Index';
 import Page from './Page';
-import CodeConverter from './CodeConverter';
 import './styles/general.css';
 import ScrollToAnchor from './ScrollToAnchor';
 
@@ -153,7 +152,77 @@ const App = () => {
               />
             }
           />
-          <Route path='/yes' element={<CodeConverter />} />
+          <Route
+            path='/styledhierarchy'
+            element={
+              <Page
+                title='StyledHierarchy'
+                description='Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one. With features such as: tree view, headers, displayed tags, layers and components.'
+                videoLink='assets/videos/myVideos/StyledHierarchy.mp4'
+                context='I created this project as I was recommended a Unity Package on the Asset store that is somewhat alike but paid. I thought that it would be a good challenge to create a package myself as it would educate me and can be used in all my future projects. It is easily customisable and I was able to cache GameObject components to save resources. I did look at pre-existing GitHub repositories to help me which were under the MIT license.'
+                githubLink='https://github.com/IAmAGameDev/Portfolio'
+                itchioLink='https://iamagamedev.itch.io/customunityhierarchy'
+                itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
+                features={[
+                  {
+                    imageLink: 'assets/images/myImages/TreeView.webp',
+                    title: 'Tree View:',
+                    description: 'Tree branches that are colour customisable.',
+                    features: [
+                      'Custom settings which are:',
+                      'Toggle to enable/disable.',
+                      'Colour customisable.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/ComponentIconsCustomUnityHierarchy.webp',
+                    title: 'Component Icons:',
+                    description:
+                      'Component icons displays on the very right what components are attached to a GameObject.',
+                    features: [
+                      'Main toggle to enable/disable.',
+                      'Compact script icons to render once.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/LayersAndTagsCustomUnityHierarchy.webp',
+                    title: 'Tags & Layers:',
+                    description:
+                      'Displays next to the component icons (if enabled) what tags and layers (setting dependant) you have on each GameObject.',
+                    features: [
+                      'Display visual layers text.',
+                      'Display visual tags text.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/HeadersCustomUnityHierarchy.webp',
+                    title: 'Headers:',
+                    description:
+                      'The header feature recently got updated to allow for more prefixes and colours. This gives more customisation potential to the user.',
+                    features: [
+                      'Header enable main toggle.',
+                      'Header colour & Prefix settings.',
+                      'List for these settings.',
+                    ],
+                  },
+                ]}
+                sourceCodeBoxes={[
+                  {
+                    boxName: 'SourceCodeHealthManagerSO', // REPLACE
+                    boxDescription:
+                      "Below is the main code that is required to run the sudoku solver, it uses a multidimensional int array which it iterates through the 0 cells trying to solve them (as they are the ones not imputed by the user).\n This means that by iterating through every cell, and checking if it is a 0, we can determine what the algorithm needs to solve for, next step is to iterate through all possible numbers that can go in that slot and then calling itself to solve the grid. If it cannot solve, the possible number would increase until eventually the grid is solved as we have gone through all if not most possible numbers. However, if all possible numbers have been used and the grid hasn't been solved then it is most likely an impossible grid.",
+                    boxTitle: 'StyledHierarchy.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                ]}
+              />
+            }
+          />
         </Routes>
       </main>
       <Footer />
