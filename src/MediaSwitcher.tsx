@@ -15,8 +15,12 @@ function MediaSwitcher({
   videoIFrameLink,
 }: Props) {
   const [successfulVideoLoad, setSuccessfulVideoLoad] = useState(false);
+  const [clickOccured, setClickOccured] = useState(false);
+  const [videoPlaying, setVideoPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  // const videoContainerRef = useRef<HTMLDivElement | null>(null);
   const hasReloaded = useRef<boolean>(false);
+  const clickTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (videoLink && videoRef.current) {
@@ -35,13 +39,64 @@ function MediaSwitcher({
 
       vid.addEventListener('loadeddata', handleVideoSwap);
       vid.addEventListener('error', handleError);
+      //vid.addEventListener('play', handlePlay);
+      //vid.addEventListener('pause', handlePause);
+      /*if (videoContainerRef.current) {
+        videoContainerRef.current.addEventListener(
+          'mouseover',
+          () => (vid.controls = true)
+        );
+        videoContainerRef.current.addEventListener(
+          'mouseleave',
+          () => (vid.controls = false)
+        );
+      }*/
 
       return () => {
         vid.removeEventListener('loadeddata', handleVideoSwap);
         vid.removeEventListener('error', handleError);
+        vid.removeEventListener('play', handlePlay);
+        vid.removeEventListener('pause', handlePause);
+        /*if (videoContainerRef.current) {
+          videoContainerRef.current.removeEventListener(
+            'mouseover',
+            () => (vid.controls = true)
+          );
+          videoContainerRef.current.removeEventListener(
+            'mouseleave',
+            () => (vid.controls = false)
+          );
+        }*/
       };
     }
   }, [videoLink]);
+
+  const handlePlay = () => setVideoPlaying(true);
+  const handlePause = () => setVideoPlaying(false);
+
+  const handleVideoClick = function () {
+    if (videoRef.current) {
+      if (videoPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+    }
+    setVideoPlaying(!videoPlaying);
+
+    // Not sure why this timeout is needed due to event delay?
+    setClickOccured(true);
+
+    if (clickTimeoutRef.current) {
+      clearTimeout(clickTimeoutRef.current);
+    }
+
+    console.log(videoPlaying);
+
+    clickTimeoutRef.current = setTimeout(() => {
+      setClickOccured(false);
+    }, 500);
+  };
 
   return (
     <div className='video-container'>
@@ -67,21 +122,15 @@ function MediaSwitcher({
                 style={{
                   display: successfulVideoLoad ? 'block' : 'none',
                 }}
-                onClick={() => {
-                  console.log('a');
-                  console.log(videoRef);
-                  videoRef.current?.play();
-                }}
+                onClick={handleVideoClick}
               ></video>
               <span
-                className='material-symbols-outlined video-play-icon'
-                onClick={() => {
-                  console.log('a');
-                  console.log(videoRef);
-                  videoRef.current?.play();
-                }}
+                className={`material-symbols-outlined video-icon-${
+                  videoPlaying ? 'play' : 'pause'
+                } ${clickOccured ? 'active' : ''}`}
+                onClick={handleVideoClick}
               >
-                arrow_right
+                {videoPlaying ? 'arrow_right' : 'pause'}
               </span>
             </div>
           </>
