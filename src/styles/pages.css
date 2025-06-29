@@ -107,10 +107,12 @@
 /* Source Code */
 .source-code-wrapper {
   margin: 20px;
+  justify-self: center;
 }
 
 .source-code-text {
   margin-bottom: 20px;
+  max-width: 1000px;
 }
 
 .source-code-box {

@@ -57,15 +57,35 @@ function MediaSwitcher({
         />
       )}
       {videoLink && (
-        <video
-          className='project-video'
-          controls
-          src={videoLink}
-          ref={videoRef}
-          style={{
-            display: successfulVideoLoad ? 'block' : 'none',
-          }}
-        ></video>
+        <>
+          <>
+            <div className='video-thumbnail'>
+              <video
+                className='project-video'
+                src={videoLink}
+                ref={videoRef}
+                style={{
+                  display: successfulVideoLoad ? 'block' : 'none',
+                }}
+                onClick={() => {
+                  console.log('a');
+                  console.log(videoRef);
+                  videoRef.current?.play();
+                }}
+              ></video>
+              <span
+                className='material-symbols-outlined video-play-icon'
+                onClick={() => {
+                  console.log('a');
+                  console.log(videoRef);
+                  videoRef.current?.play();
+                }}
+              >
+                arrow_right
+              </span>
+            </div>
+          </>
+        </>
       )}
       {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}
     </div>
