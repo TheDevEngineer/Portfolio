@@ -13,7 +13,6 @@ This page currently uses a default Vite + React template.
   - Last tested: 26/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-- [ ] Look into synced faked controls maybe by also "Lazy" loading the other videos
 - [ ] Fix the source code block flex title not working on mobile maybe make it vw on mobile for the title just to fix this?
 - [ ] Swap and animate the mobile menu icon
 - [ ] Move files back out of the public so they will get compressed?

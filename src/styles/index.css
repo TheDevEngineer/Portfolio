@@ -122,6 +122,7 @@
   justify-content: center;
 
   opacity: 0;
+  pointer-events: none;
 }
 
 .video-icon-play.active,
