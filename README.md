@@ -13,7 +13,6 @@ This page currently uses a default Vite + React template.
   - Last tested: 26/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-- [ ] Swap and animate the mobile menu icon - `EFFECTS / MINOR`
 - [ ] Move files back out of the public so they will get compressed? - `CONSIDER`
 - [ ] Add my CV. - `MAJOR`
 - [ ] Add the media swapper to the sub pages - `MINOR`

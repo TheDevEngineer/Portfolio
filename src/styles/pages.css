@@ -67,11 +67,11 @@
 .features-section {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
+  row-gap: 20px;
 }
 
 .feature-box {
-  margin-top: 20px;
   border: 2px solid black;
 }
 
@@ -323,6 +323,10 @@
 
   .source-code-button-text {
     font-size: 16px;
+  }
+
+  .features-section {
+    column-gap: 20px;
   }
 }
 

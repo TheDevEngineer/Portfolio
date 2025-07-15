@@ -97,12 +97,18 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
               alt='LinkedIn Logo'
             />
           </a>
-          <span
-            className='material-symbols-outlined mso-menu'
-            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          <div
+            className={
+              'header-right-mobile-lines ' + (mobileNavOpen ? 'active' : '')
+            }
+            onClick={() => {
+              setMobileNavOpen(!mobileNavOpen);
+            }}
           >
-            menu
-          </span>
+            <span />
+            <span />
+            <span />
+          </div>
         </div>
       )}
     </header>
