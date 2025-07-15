@@ -51,6 +51,18 @@ function ProjectCard({
           videoIFrameLink={videoIFrameLink}
         />
       )}
+      {imageLink && imageAlt && !videoLink && !videoIFrameLink && (
+        <div className='video-container'>
+          <img
+            className='project-image'
+            src={imageLink}
+            alt={imageAlt}
+            style={{
+              margin: 'fill',
+            }}
+          />
+        </div>
+      )}
       <div className='description-container'>
         <p className='project-title'>{projectTitle}</p>
         <p className='project-description'>{projectDescription}</p>

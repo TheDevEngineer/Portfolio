@@ -161,7 +161,7 @@ const App = () => {
                 videoLink='assets/videos/myVideos/StyledHierarchy.mp4'
                 context='I created this project as I was recommended a Unity Package on the Asset store that is somewhat alike but paid. I thought that it would be a good challenge to create a package myself as it would educate me and can be used in all my future projects. It is easily customisable and I was able to cache GameObject components to save resources. I did look at pre-existing GitHub repositories to help me which were under the MIT license.'
                 githubLink='https://github.com/IAmAGameDev/Portfolio'
-                itchioLink='https://iamagamedev.itch.io/customunityhierarchy'
+                itchioLink='https://iamagamedev.itch.io/styledhierarchy'
                 itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
                 features={[
                   {
@@ -176,7 +176,7 @@ const App = () => {
                   },
                   {
                     imageLink:
-                      'assets/images/myImages/ComponentIconsCustomUnityHierarchy.webp',
+                      'assets/images/myImages/ComponentIconsStyledHierarchy.webp',
                     title: 'Component Icons:',
                     description:
                       'Component icons displays on the very right what components are attached to a GameObject.',
@@ -187,7 +187,7 @@ const App = () => {
                   },
                   {
                     imageLink:
-                      'assets/images/myImages/LayersAndTagsCustomUnityHierarchy.webp',
+                      'assets/images/myImages/LayersAndTagsStyledHierarchy.webp',
                     title: 'Tags & Layers:',
                     description:
                       'Displays next to the component icons (if enabled) what tags and layers (setting dependant) you have on each GameObject.',
@@ -198,7 +198,7 @@ const App = () => {
                   },
                   {
                     imageLink:
-                      'assets/images/myImages/HeadersCustomUnityHierarchy.webp',
+                      'assets/images/myImages/HeadersStyledHierarchy.webp',
                     title: 'Headers:',
                     description:
                       'The header feature recently got updated to allow for more prefixes and colours. This gives more customisation potential to the user.',
@@ -238,6 +238,72 @@ Now lets store an integer called "offset" and by default set it to 0 (this will 
 
 The final steps are to setup the foor loop for all objectComponents we collected, we need to collect the icon Unity currently uses (see code block below) for full line of code. Once we have the GUIContent Unity uses, which stores the image and text but we just need the image in this case. we can store this as a Texture2D. Finally using "GUI.DrawTexture(newRect, componentTexture);" to make the component icons come to life (adding a offset (20pixels) after every icon)`,
                     boxTitle: 'StyledHierarchy.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                ]}
+              />
+            }
+          />
+          <Route
+            path='/styledprojectfolders'
+            element={
+              <Page
+                title='StyledProjectFolders'
+                description='This project was an educational and personal project I completed after coding my StyledHierarchy project. I created this as I disliked how Unity originally looks. This is now a package that I import into all my Unity projects, to help visualise where prefabs/assets are stored.'
+                videoLink='assets/videos/myVideos/StyledProjectFolders.mp4'
+                context='This is a follow up package after completing StyledHierarchy that changes the look of the project folders window (see image above). I really like the customisation settings on this project, it takes in a folder path that the user wants to customise, and then it displays different settings along with textures for if the folder is empty, or contains data (more features below).'
+                sourcePrivate={true}
+                features={[
+                  {
+                    imageLink: 'assets/images/myImages/TreeView.webp',
+                    title: 'Tree View:',
+                    description: 'Tree branches that are colour customisable.',
+                    features: [
+                      'Custom settings which are:',
+                      'Toggle to enable/disable.',
+                      'Colour customisable.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/AlternatingBackground.webp',
+                    title: 'Alternating Background:',
+                    description:
+                      'Alternating background alternates a background colour behind the folder mainly for aesthetic looks.',
+                    features: [
+                      'Custom settings which are:',
+                      'Main toggle to enable/disable.',
+                      'First colour to alternate with.',
+                      'Second colour to alternate with.',
+                    ],
+                  },
+                  {
+                    imageLink: 'assets/images/myImages/FolderList.webp',
+                    title: 'Custom Folders:',
+                    description:
+                      'My favourite section, this overrides the default folder look with new Texture(s) for if it contains data or if it is empty.',
+                    features: [
+                      'Custom settings which are:',
+                      'Override the default unity folder texture and showcase when a folder is empty.',
+                      'Create a list of folders with sub settings: Folder path to edit, New folder icon, Empty folder icon, Header status, Header colour, Recursive (effects children).',
+                    ],
+                  },
+                ]}
+                sourceCodeBoxes={[
+                  {
+                    boxName: 'SourceCodeStyledProjectFolders',
+                    boxDescription: `Below is the bare bones for drawing a folder over the top of another folder.
+
+I have added comments for what each major line does, it utilises Unity methods such as "GUI.DrawTexture" at a "Rect" with the "Texture" folder in this case.
+
+When Unity "re-draws" the Project Window, a API is called which we can subscribe to by doing "EditorApplication.projectWindowItemOnGUI += Draw;". This allows us to find what item is being drawn, as it gives us a guid (unique identifier) along with a "Rect" of what item is being drawn.
+
+The secret behind these projects is that the images are just being drawn over the top of the previous ones. Due to how Unity works, there is no current way to override the folder icon without drawing over the previous one, this is the same case with the Hierarchy.
+
+Therefore getting creative with drawing it above as if the one drawn by Unity didn't exist can achieve a good but not perfect result. This is because it still uses resources in the first place to draw the first texture then to re-draw ours.`,
+                    boxTitle: 'StyledProjectFolders.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
                     boxLanguage: 'csharp',

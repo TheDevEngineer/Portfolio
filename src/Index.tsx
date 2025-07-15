@@ -4,24 +4,20 @@ import MediaSwitcher from './MediaSwitcher';
 
 const projects = [
   {
-    imageLink: 'assets/images/myImages/Cataclysm2.5D.webp', // Replace #TODO3
-    imageAlt: 'Cataclysm image', // Replace
-    videoIFrameLink: '6_uGLtb_7vo', // Replace
+    imageLink: 'assets/images/myImages/EasyAutoScript.webp',
+    imageAlt: 'EasyAutoScript',
     projectTitle: 'Easy Auto Script',
-    // Replace
     projectDescription:
-      'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
-    readMoreLink: '/Portfolio/#/cataclysm', // Replace
+      'Easy Auto Script is a macro coding language that takes custom Tokens/Keywords "GetForegroundWindow()", and returns it in a new coding language based on EasyAutoScript.txt. This is heavily work in progress and will be getting SendInput commands later on.',
+    readMoreLink: '/Portfolio/', // Replace #TODO3
     tags: [
-      // Replace
       'C#',
-      'Unity',
+      'Lexer',
+      'Interpreter',
+      'Custom Coding Language',
       'Git',
-      '2.5D',
-      'Multiplayer',
-      'Group Project',
-      'Visual Studio',
-      'University Project',
+      'VSCode',
+      'Personal Project',
     ],
   },
   {
@@ -62,8 +58,8 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg',
-    imageAlt: 'Award image',
+    imageLink: 'assets/images/myImages/HeadersStyledHierarchy.webp',
+    imageAlt: 'Styled Hierarchy Headers',
     videoLink: 'assets/videos/myVideos/StyledHierarchy.mp4',
     projectTitle: 'Styled Hierarchy',
     projectDescription:
@@ -81,13 +77,13 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg',
-    imageAlt: 'Award image',
+    imageLink: 'assets/images/myImages/FolderList.webp',
+    imageAlt: 'Folder List',
     videoLink: 'assets/videos/myVideos/StyledProjectFolders.mp4',
     projectTitle: 'Styled Project Folders',
     projectDescription:
       'This is a importable custom Unity package (written in c#), that changes the look of the Unity project folders tab. This works by setting a folder and drawing over the top of it with a sprite of your choice, then you can enable header settings along with if it is recursive (applies to children).',
-    readMoreLink: '/Portfolio/',
+    readMoreLink: '/Portfolio/#/styledprojectfolders',
     tags: [
       'C#',
       'Unity',
