@@ -211,9 +211,32 @@ const App = () => {
                 ]}
                 sourceCodeBoxes={[
                   {
-                    boxName: 'SourceCodeHealthManagerSO', // REPLACE
+                    boxName: 'SourceCodeStyledHierarchyStepOne',
                     boxDescription:
-                      "Below is the main code that is required to run the sudoku solver, it uses a multidimensional int array which it iterates through the 0 cells trying to solve them (as they are the ones not imputed by the user).\n This means that by iterating through every cell, and checking if it is a 0, we can determine what the algorithm needs to solve for, next step is to iterate through all possible numbers that can go in that slot and then calling itself to solve the grid. If it cannot solve, the possible number would increase until eventually the grid is solved as we have gone through all if not most possible numbers. However, if all possible numbers have been used and the grid hasn't been solved then it is most likely an impossible grid.",
+                      'Below will be a step by step guide on how to create the basic StyledHierarchy script to draw textures for each of the components. First we have to create a new C# script that will be called StyledHierarchy this will need to be placed inside of Unity in a Editor/StyledHierarchy.cs folder so that it runs during editor and not runtime.',
+                    boxTitle: 'StyledHierarchy.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                  {
+                    boxName: 'SourceCodeStyledHierarchyStepTwo',
+                    boxDescription:
+                      'After this we need to tell Unity that every time the Editor refreshes/loads, we want an event to be called. To do this, inside of the class, we use a static method named as your [FileName]. Inside this method, we need to listen to the event "EditorApplication.hierarchyWindowItemOnGUI += Draw;". Now we have our api call setup, we can press shift + enter on the "Draw" method and generate it from scratch.',
+                    boxTitle: 'StyledHierarchy.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                  {
+                    boxName: 'SourceCodeStyledHierarchyStepThree',
+                    boxDescription: `Inside this draw method, we should first check and return if the object we have got from the "instanceID" is null. This usually occurs when it draws the scene name.
+
+Next we can convert the instanceID to a Object by using: "Object objectReference = EditorUtility.InstanceIDToObject(instanceID);" Then converting it into a GameObject with: "GameObject gameObject = objectReference as GameObject;". Now we have the GameObject we are drawing we just need a list of its components, we can get this by using: "Component[] objectComponents = gameObject.GetComponents<Component>();"
+
+Now lets store an integer called "offset" and by default set it to 0 (this will come in use later).
+
+The final steps are to setup the foor loop for all objectComponents we collected, we need to collect the icon Unity currently uses (see code block below) for full line of code. Once we have the GUIContent Unity uses, which stores the image and text but we just need the image in this case. we can store this as a Texture2D. Finally using "GUI.DrawTexture(newRect, componentTexture);" to make the component icons come to life (adding a offset (20pixels) after every icon)`,
                     boxTitle: 'StyledHierarchy.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',

@@ -117,6 +117,8 @@
 .source-code-text {
   margin-bottom: 20px;
   max-width: 1000px;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 .source-code-box {

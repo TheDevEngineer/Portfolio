@@ -3,6 +3,9 @@ import SourceCodeFlexbox from './portfolio/SourceCodeFlexbox';
 import SourceCodeConverter from './portfolio/SourceCodeConverter';
 import SourceCodeHealthManagerSO from './portfolio/SourceCodeHealthManagerSO';
 import SourceCodeRenderEnablerEditor from './portfolio/SourceCodeRenderEnablerEditor';
+import SourceCodeStyledHierarchyStepOne from './portfolio/SourceCodeStyledHierarchyStepOne';
+import SourceCodeStyledHierarchyStepTwo from './portfolio/SourceCodeStyledHierarchyStepTwo';
+import SourceCodeStyledHierarchyStepThree from './portfolio/SourceCodeStyledHierarchyStepThree';
 
 interface Props {
   box: SourceCodeBoxes;
@@ -22,6 +25,9 @@ const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeConverter: SourceCodeConverter,
   SourceCodeHealthManagerSO: SourceCodeHealthManagerSO,
   SourceCodeRenderEnablerEditor: SourceCodeRenderEnablerEditor,
+  SourceCodeStyledHierarchyStepOne: SourceCodeStyledHierarchyStepOne,
+  SourceCodeStyledHierarchyStepTwo: SourceCodeStyledHierarchyStepTwo,
+  SourceCodeStyledHierarchyStepThree: SourceCodeStyledHierarchyStepThree,
 };
 
 function SourceCodeBox({ box }: Props) {
