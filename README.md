@@ -13,10 +13,13 @@ This page currently uses a default Vite + React template.
   - Last tested: 26/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-- [ ] Fix the source code block flex title not working on mobile maybe make it vw on mobile for the title just to fix this?
-- [ ] Swap and animate the mobile menu icon
-- [ ] Move files back out of the public so they will get compressed?
-- [ ] Add my CV.
+- [ ] Swap and animate the mobile menu icon - `EFFECTS / MINOR`
+- [ ] Move files back out of the public so they will get compressed? - `CONSIDER`
+- [ ] Add my CV. - `MAJOR`
+- [ ] Add the media swapper to the sub pages - `MINOR`
+- [ ] Cataclysm YT video is wrong - `MAJOR`
+- [ ] Show fake controls on YT hover - `MINOR`
+- [ ] Header breaks smaller than 230px (tested on cataclysm page) - `NOT IMPORTANT`
 
 ---
 

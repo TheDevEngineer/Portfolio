@@ -34,13 +34,19 @@ function SourceCodeBox({ box }: Props) {
   const Component = componentsMap[box.boxName];
 
   useEffect(() => {
-    if (!codeRef.current) {
-      return;
-    }
-    const count =
-      (codeRef.current.innerHTML.match(new RegExp('<br>', 'g')) || []).length +
-      1;
-    setLineCount(count);
+    const handleSizeChange = function () {
+      if (!codeRef.current) {
+        return;
+      }
+      const count = codeRef.current.clientHeight / 24;
+      setLineCount(count);
+    };
+    handleSizeChange();
+
+    window.addEventListener('resize', handleSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleSizeChange);
+    };
   });
 
   return (
@@ -51,7 +57,7 @@ function SourceCodeBox({ box }: Props) {
           <div className='source-code-box-top'>
             <div className='source-code-box-image-and-text'>
               <img src={box.boxImg} alt={box.boxImgAlt} width='24px' />
-              <p>{box.boxTitle}</p>
+              <p className='source-code-box-title'>{box.boxTitle}</p>
             </div>
             <button
               onClick={() => {
@@ -73,7 +79,9 @@ function SourceCodeBox({ box }: Props) {
                 }, 1000);
               }}
             >
-              <span ref={buttonTextRef}>Copy Code</span>
+              <span ref={buttonTextRef} className='source-code-button-text'>
+                Copy Code
+              </span>
               <span
                 ref={buttonIconRef}
                 className='material-symbols-outlined mso-copy'
@@ -93,8 +101,11 @@ function SourceCodeBox({ box }: Props) {
                 ))}
               </code>
             </p>
-            <pre>
-              <code className={`language-${box.boxLanguage}`} ref={codeRef}>
+            <pre className='source-code-formatting'>
+              <code
+                className={`language-${box.boxLanguage} source-code-formatting`}
+                ref={codeRef}
+              >
                 <Component />
               </code>
             </pre>

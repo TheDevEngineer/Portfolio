@@ -1,5 +1,5 @@
 .mso-copy {
-  font-size: 24px !important;
+  font-size: 4vw !important;
 }
 
 .desktop-layout {
@@ -71,7 +71,7 @@
 }
 
 .feature-box {
-  margin: 20px;
+  margin-top: 20px;
   border: 2px solid black;
 }
 
@@ -110,6 +110,10 @@
   justify-self: center;
 }
 
+.source-code-box-title {
+  word-break: break-all;
+}
+
 .source-code-text {
   margin-bottom: 20px;
   max-width: 1000px;
@@ -133,9 +137,16 @@
   align-items: center;
   background-color: white;
   border: none;
-  width: 120px;
-  padding: 0;
+  max-width: 150px;
+  padding: 5px;
   cursor: pointer;
+  height: auto;
+}
+
+.source-code-button-text {
+  font-size: 3vw;
+  white-space: nowrap;
+  margin-right: 5px;
 }
 
 .source-code-box-image-and-text,
@@ -149,12 +160,16 @@
   align-items: center;
 }
 
+.source-code-box-image-and-text p {
+  font-size: 3vw;
+}
+
 .source-code-box-image-and-text img {
   margin-right: 10px;
 }
 
 .source-code-box-bottom {
-  overflow: auto;
+  overflow-x: wrap;
 }
 
 .source-code-numbers {
@@ -164,12 +179,21 @@
 }
 
 .source-code-box pre {
+  white-space: pre-wrap;
   margin: 0;
 }
 
 .source-code-box code {
+  display: inline-block;
   font-size: 14px;
   line-height: 24px;
+}
+
+.source-code-formatting {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 /* Source Code - Spans */
@@ -281,12 +305,24 @@
 
 /* Desktop */
 @media only screen and (min-width: 767px) {
+  .mso-copy {
+    font-size: 24px !important;
+  }
+
   .mobile-layout {
     display: none;
   }
 
   .desktop-layout {
     display: block;
+  }
+
+  .source-code-box-image-and-text p {
+    font-size: 20px;
+  }
+
+  .source-code-button-text {
+    font-size: 16px;
   }
 }
 
@@ -298,7 +334,6 @@
 
   .feature-box {
     display: flex;
-    margin: 20px;
     height: 250px;
     border: 2px solid black;
   }
