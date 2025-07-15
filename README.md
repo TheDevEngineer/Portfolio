@@ -15,6 +15,7 @@ This page currently uses a default Vite + React template.
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
 - [ ] Add my CV. - `MAJOR`
 - [ ] Show fake controls on YT hover - `MINOR`
+- [ ] Update the index.tsx - Easy Auto Script - `MAJOR` #TODO3
 
 ---
 

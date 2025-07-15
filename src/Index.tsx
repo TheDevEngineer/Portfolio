@@ -4,6 +4,27 @@ import MediaSwitcher from './MediaSwitcher';
 
 const projects = [
   {
+    imageLink: 'assets/images/myImages/Cataclysm2.5D.webp', // Replace #TODO3
+    imageAlt: 'Cataclysm image', // Replace
+    videoIFrameLink: '6_uGLtb_7vo', // Replace
+    projectTitle: 'Easy Auto Script',
+    // Replace
+    projectDescription:
+      'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
+    readMoreLink: '/Portfolio/#/cataclysm', // Replace
+    tags: [
+      // Replace
+      'C#',
+      'Unity',
+      'Git',
+      '2.5D',
+      'Multiplayer',
+      'Group Project',
+      'Visual Studio',
+      'University Project',
+    ],
+  },
+  {
     projectTitle: 'My Portfolio',
     projectDescription:
       "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I use to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML.",

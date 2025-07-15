@@ -60,7 +60,7 @@ function SourceCodeStyledHierarchyStepOne() {
         <br />
         {'    '}
         <span className='p'>if</span> (
-        <span className='delegates'>EditorUtility</span>
+        <span className='delegates'>EditorUtility</span>.
         <span className='span y'>InstanceIDToObject</span>(
         <span className='lb'>instanceID</span>) =={' '}
         <span className='db'>null</span>)
@@ -159,7 +159,7 @@ function SourceCodeStyledHierarchyStepOne() {
         <span className='y'>ObjectContent</span>(
         <span className='lb'>gameObjectComponents</span>[
         <span className='lb'>i</span>],
-        <span className='lb'>gameObjectComponents</span>[
+        <span className='lb'> gameObjectComponents</span>[
         <span className='lb'>i</span>].
         <span className='y'>GetType</span>());
         <br />
@@ -196,6 +196,8 @@ function SourceCodeStyledHierarchyStepOne() {
         <span className='numbers'>20</span>;
         <br />
         {'    '}&#125;
+        <br />
+        {'  '}&#125;
         <br />
         &#125;
       </span>
