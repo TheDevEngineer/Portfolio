@@ -19,6 +19,8 @@
 
 .welcome-video-section {
   margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .welcome-video {
@@ -68,6 +70,13 @@
 }
 
 /* Projects */
+.projects-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-div {
   margin: 20px;
 }
@@ -318,13 +327,6 @@
 
   .description-container {
     max-width: 460px;
-  }
-}
-
-@media only screen and (max-width: 1890px) {
-  .projects-section {
-    display: block;
-    margin: 20px 0;
   }
 }
 

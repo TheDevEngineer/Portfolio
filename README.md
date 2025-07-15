@@ -19,7 +19,6 @@ This page currently uses a default Vite + React template.
 - [ ] Show fake controls on YT hover - `MINOR`
 - [ ] Header breaks smaller than 230px (tested on cataclysm page) - `NOT IMPORTANT`
 - [ ] Home page video/image widths are fixed 420px so they break the page (mobile) - `MAJOR`
-- [ ] Home page video/image are not aligned center (mobile) - `MAJOR`
 
 ---
 
