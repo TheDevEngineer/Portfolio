@@ -1,6 +1,7 @@
 import SourceCodeBox from './sourcecode/SourceCodeBox';
 import FeatureCard from './FeatureCard';
 import './styles/pages.css';
+import LazyYoutube from './LazyYoutube';
 
 interface Props {
   title: string;
@@ -82,17 +83,7 @@ function Page({
             })}
           </div>
         )}
-        {videoIFrameLink && (
-          <iframe
-            className='welcome-video'
-            src={videoIFrameLink}
-            allowFullScreen
-            allow='encrypted-media'
-            title='YouTube video player'
-            referrerPolicy='strict-origin-when-cross-origin'
-            loading='lazy'
-          />
-        )}
+        {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}
       </div>
       <hr className='hr-solid' />
       <div className='context-and-description'>

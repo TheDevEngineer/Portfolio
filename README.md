@@ -13,12 +13,8 @@ This page currently uses a default Vite + React template.
   - Last tested: 26/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-- [ ] Move files back out of the public so they will get compressed? - `CONSIDER`
 - [ ] Add my CV. - `MAJOR`
-- [ ] Add the media swapper to the sub pages - `MINOR`
 - [ ] Show fake controls on YT hover - `MINOR`
-- [ ] Header breaks smaller than 230px (tested on cataclysm page) - `NOT IMPORTANT`
-- [ ] Home page video/image widths are fixed 420px so they break the page (mobile) - `MAJOR`
 
 ---
 
