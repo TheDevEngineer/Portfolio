@@ -16,9 +16,10 @@ This page currently uses a default Vite + React template.
 - [ ] Move files back out of the public so they will get compressed? - `CONSIDER`
 - [ ] Add my CV. - `MAJOR`
 - [ ] Add the media swapper to the sub pages - `MINOR`
-- [ ] Cataclysm YT video is wrong - `MAJOR`
 - [ ] Show fake controls on YT hover - `MINOR`
 - [ ] Header breaks smaller than 230px (tested on cataclysm page) - `NOT IMPORTANT`
+- [ ] Home page video/image widths are fixed 420px so they break the page (mobile) - `MAJOR`
+- [ ] Home page video/image are not aligned center (mobile) - `MAJOR`
 
 ---
 
