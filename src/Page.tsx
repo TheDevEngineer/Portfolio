@@ -6,6 +6,8 @@ import LazyYoutube from './LazyYoutube';
 interface Props {
   title: string;
   description: string;
+  imageLink?: string;
+  imageLinkAlt?: string;
   videoIFrameLink?: string;
   videoLink?: string;
   images?: ImagesAndAlt[];
@@ -42,6 +44,8 @@ type SourceCodeBoxes = {
 function Page({
   title,
   description,
+  imageLink,
+  imageLinkAlt,
   videoIFrameLink,
   videoLink,
   images,
@@ -68,6 +72,15 @@ function Page({
             src={videoLink}
             width='420'
           ></video>
+        )}
+        {imageLink && (
+          <img
+            className='welcome-image-big'
+            src={imageLink}
+            alt={imageLinkAlt}
+            width='420'
+            height='auto'
+          />
         )}
         {images && (
           <div className='images'>

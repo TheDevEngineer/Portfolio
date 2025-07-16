@@ -9,7 +9,7 @@ const projects = [
     projectTitle: 'Easy Auto Script',
     projectDescription:
       'Easy Auto Script is a macro coding language that takes custom Tokens/Keywords "GetForegroundWindow()", and returns it in a new coding language based on EasyAutoScript.txt. This is heavily work in progress and will be getting SendInput commands later on.',
-    readMoreLink: '/Portfolio/', // Replace #TODO3
+    readMoreLink: '/Portfolio/#/easyautoscript',
     tags: [
       'C#',
       'Lexer',

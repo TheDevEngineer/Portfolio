@@ -31,6 +31,56 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Index />} />
           <Route
+            path='/easyautoscript'
+            element={
+              <Page
+                title='Easy Auto Script'
+                description='Easy Auto Script is a macro language that allows custom user inputs, it tokenizes these inputs, parsers the functions, then interprets them to generate a desired output which will either by moving the mouse, sending keyboard or mouse instructions or general windows functions.'
+                imageLink='assets/images/myImages/EasyAutoScript.webp'
+                context="This is a personal project I created as I didn't want to rely on third-party software. Instead, I built my own program and interpreter, which supports keyboard and mouse inputs, along with setting foreground windows and other various windows functions using the user32.dll."
+                sourcePrivate={true}
+                features={[
+                  {
+                    imageLink: 'assets/images/myImages/EasyAutoScript.webp',
+                    title: 'Custom Coding Language:',
+                    description:
+                      'Takes in a custom coding language that determines what Tokens are present:',
+                    features: [
+                      'IStatement: "Write(123) = WriteStatement',
+                      'IExpression: "123" = NumberLiteralExpression.',
+                    ],
+                  },
+                  {
+                    imageLink:
+                      'assets/images/myImages/EasyAutoScriptHandler.webp',
+                    title: 'Custom Handlers:',
+                    description:
+                      'WriteStatementHandler handles the keyword "Write" in which it can take in a list/var/value.',
+                    features: [
+                      '[In] list/var/value,',
+                      '[Out] Outputs to the console the list/var/value that was passed in.',
+                    ],
+                  },
+                ]}
+                sourceCodeBoxes={[
+                  {
+                    boxName: 'SourceCodeToken',
+                    boxDescription: `This token.cs file stores a Token such as "String "Hello" Hello 1" and here is how it breaks down in this file:
+                      
+                    TokenType (String),
+                    Lexeme (The text that was found which in the example I am going to use is "Hello"), 
+                    A Literal, which is the actual value: Hello, 
+                    Finally, the Token stores a line number for any parse errors to make it easier to the user to debug once pointed to where the error occured.`,
+                    boxTitle: 'Token.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                ]}
+              />
+            }
+          />
+          <Route
             path='/portfolio'
             element={
               <Page

@@ -31,9 +31,16 @@
   height: auto;
 }
 
-.welcome-video {
+.welcome-video,
+.welcome-image-big {
   height: 236px;
   width: 420px;
+}
+
+.welcome-image-big {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-title {
