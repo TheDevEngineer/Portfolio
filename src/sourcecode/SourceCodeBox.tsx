@@ -11,6 +11,7 @@ import SourceCodeToken from './portfolio/SourceCodeToken';
 import SourceCodeSudokuSolverStepOne from './portfolio/SourceCodeSudokuSolverStepOne';
 import SourceCodeSudokuSolverStepTwo from './portfolio/SourceCodeSudokuSolverStepTwo';
 import SourceCodeSudokuSolverStepThree from './portfolio/SourceCodeSudokuSolverStepThree';
+import SourceCodeBloom from './portfolio/SourceCodeBloom';
 
 interface Props {
   box: SourceCodeBoxes;
@@ -38,6 +39,7 @@ const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeSudokuSolverStepOne: SourceCodeSudokuSolverStepOne,
   SourceCodeSudokuSolverStepTwo: SourceCodeSudokuSolverStepTwo,
   SourceCodeSudokuSolverStepThree: SourceCodeSudokuSolverStepThree,
+  SourceCodeBloom: SourceCodeBloom,
 };
 
 function SourceCodeBox({ box }: Props) {

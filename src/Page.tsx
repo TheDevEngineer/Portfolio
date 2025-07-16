@@ -100,7 +100,12 @@ function Page({
             })}
           </div>
         )}
-        {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}
+
+        {videoIFrameLink && (
+          <div className='video-container'>
+            <LazyYoutube videoIFrameLink={videoIFrameLink} />
+          </div>
+        )}
       </div>
       <hr className='hr-solid' />
       <div className='context-and-description'>
@@ -168,21 +173,26 @@ function Page({
                 )}
               </div>
             )}
-            {itchioEmbed && (
-              <iframe
-                className='itchio-embed'
-                src={itchioEmbed}
-                width='320'
-                height='600'
-              >
-                <a
-                  href={itchioEmbedALink}
-                  target='_blank'
-                  rel='noopener noreferrer nofollow'
+            {itchioEmbed && itchioEmbedALink && (
+              <div className='itchio-embed-margin'>
+                <div
+                  className={`itchio-embed-div ${
+                    itchioEmbedALink.includes('bloom')
+                      ? 'aspect-16-9'
+                      : 'aspect-3-5'
+                  }`}
                 >
-                  Play {title} on itch.io
-                </a>
-              </iframe>
+                  <iframe className='itchio-embed' src={itchioEmbed}>
+                    <a
+                      href={itchioEmbedALink}
+                      target='_blank'
+                      rel='noopener noreferrer nofollow'
+                    >
+                      Play {title} on itch.io
+                    </a>
+                  </iframe>
+                </div>
+              </div>
             )}
           </div>
         </>

@@ -117,7 +117,7 @@ const projects = [
     projectTitle: 'Bloom',
     projectDescription:
       'Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
-    readMoreLink: '/Portfolio/',
+    readMoreLink: '/Portfolio/#/bloom',
     tags: [
       'C#',
       'Unity',

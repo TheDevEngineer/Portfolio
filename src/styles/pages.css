@@ -107,14 +107,32 @@
   column-gap: 50px;
 }
 
-.iframe {
-  max-width: 100%;
-  height: auto;
-  border: none;
+.itchio-embed-margin {
+  margin: 0 20px;
+}
+
+.itchio-embed-div {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+  max-width: 960px;
+  max-height: 540px;
+}
+.aspect-3-5 {
+  aspect-ratio: 3 / 6;
+  max-width: 320px;
+  max-height: 600px;
 }
 
 .itchio-embed {
-  margin: 0px 20px 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Source Code */

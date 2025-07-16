@@ -413,6 +413,37 @@ It then iterates through a list of numbers which is stored as a guess, and calls
               />
             }
           />
+          <Route
+            path='/bloom'
+            element={
+              <Page
+                title='Bloom'
+                description='Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for such as an anniversary, then make a connection within a time limit for example any flowers that are the colour red and arrange a beautiful bouquet.'
+                videoIFrameLink='UARZzjsFQg8'
+                context={`This Project was my Second Year University group project where I was the lead-programmer and animation designer. To achieve this I coded the flower arrangement side of the game along with the scoring system, timer and main menu. I designed animations for wrapping the bouquet, is done with a plugin/package called DoTween, which allows for scripting animations within Unity.`}
+                itchioLink='https://dont-ask-productions.itch.io/bloom'
+                itchioIFrame='https://itch.io/embed/2711547?border_width=5&amp;dark=true'
+                itchioEmbed='https://itch.io/embed-upload/10435569?color=333333'
+                itchioEmbedALink='https://dont-ask-productions.itch.io/bloom'
+                sourceCodeBoxes={[
+                  {
+                    boxName: 'SourceCodeBloom',
+                    boxDescription: `The flower arrangement is handled with mouse calls you can see a list below:
+
+By checking when a mouse enters, exits, is pressed (down) and released (up) you can then script all of the code within these methods.
+
+An example of this is using the "OnMouseEnter" method to display the flower data based on what image (flower) the mouse has hovered over, then as it leaves "OnMouseExit" we can hide the information box.
+
+The "OnMouseDown" method is used to pickup a flower (causing it to follow the cursor position by setting a boolean to true) then we can disable the boolean within "OnMouseUp" call handling if it is in an arrangement spot or if it needs to be returned back to the flower bucket.`,
+                    boxTitle: 'MouseHandlers.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                ]}
+              />
+            }
+          />
         </Routes>
       </main>
       <Footer />
