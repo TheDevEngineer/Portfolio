@@ -13,7 +13,7 @@ function FeatureCard({ imageLink, title, description, features }: Props) {
       </div>
       <div className='feature-sub-box'>
         <p className='feature-title'>{title}</p>
-        <p>{description}</p>
+        <p className='feature-description'>{description}</p>
         <p>
           {features.map((item, index) => (
             <span key={index}>
