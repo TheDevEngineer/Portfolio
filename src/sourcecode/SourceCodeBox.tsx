@@ -8,6 +8,9 @@ import SourceCodeStyledHierarchyStepTwo from './portfolio/SourceCodeStyledHierar
 import SourceCodeStyledHierarchyStepThree from './portfolio/SourceCodeStyledHierarchyStepThree';
 import SourceCodeStyledProjectFolders from './portfolio/SourceCodeStyledProjectFolders';
 import SourceCodeToken from './portfolio/SourceCodeToken';
+import SourceCodeSudokuSolverStepOne from './portfolio/SourceCodeSudokuSolverStepOne';
+import SourceCodeSudokuSolverStepTwo from './portfolio/SourceCodeSudokuSolverStepTwo';
+import SourceCodeSudokuSolverStepThree from './portfolio/SourceCodeSudokuSolverStepThree';
 
 interface Props {
   box: SourceCodeBoxes;
@@ -32,6 +35,9 @@ const componentsMap: { [key: string]: React.ComponentType } = {
   SourceCodeStyledHierarchyStepThree: SourceCodeStyledHierarchyStepThree,
   SourceCodeStyledProjectFolders: SourceCodeStyledProjectFolders,
   SourceCodeToken: SourceCodeToken,
+  SourceCodeSudokuSolverStepOne: SourceCodeSudokuSolverStepOne,
+  SourceCodeSudokuSolverStepTwo: SourceCodeSudokuSolverStepTwo,
+  SourceCodeSudokuSolverStepThree: SourceCodeSudokuSolverStepThree,
 };
 
 function SourceCodeBox({ box }: Props) {

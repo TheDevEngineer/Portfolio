@@ -362,6 +362,57 @@ Therefore getting creative with drawing it above as if the one drawn by Unity di
               />
             }
           />
+          <Route
+            path='/sudokusolver'
+            element={
+              <Page
+                title='Sodoku Solver'
+                description='When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was this sudoku solver which uses a recursive algrothim.'
+                videoLink='assets/videos/myVideos/SudokuSolver.mp4'
+                context={`This C# sudoku solver was an educational project that I have created in my own time, it uses a recursive algorithm to solve the boards. To achieve this solver I followed this YouTube tutorial: (Create Sudoku Solver with Python in 20 minutes, 5 Jan. 2021).
+
+What is a recursive backtracking algorithm and how do I use it?
+
+By iterating through a list of possible numbers for each cell, then trying to solve the remaining grid from that point forwards. If it fails, it backtracks to the previous cell in which it iterates that cell number until either a solution is found, or it determines it's an impossible grid.`}
+                itchioLink='https://iamagamedev.itch.io/sudokusolver'
+                itchioIFrame='https://itch.io/embed/3460250?border_width=5&amp;dark=true'
+                itchioEmbed='https://itch.io/embed-upload/13377082?color=333333'
+                itchioEmbedALink='https://iamagamedev.itch.io/sudokusolver'
+                sourceCodeBoxes={[
+                  {
+                    boxName: 'SourceCodeSudokuSolverStepOne',
+                    boxDescription: `Below is how I use 2 dimensional arrays in Unity C# to create a grid.
+
+This 2 dimensional array allows me to pass through a y and x position to get a value: "int cell = grid[y, x]" with the number starting at 0 as it is an array. Therefore, to get the top left slot and set it to 0 I would call "grid[0, 0] = 0"`,
+                    boxTitle: 'SodokuSolver.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                  {
+                    boxName: 'SourceCodeSudokuSolverStepTwo',
+                    boxDescription: `This solve function/method does exactly what the name states, solves for each empty cell. To do this it iterates through each y cell and each x cell to check if it is one it needs to solve for which is indicated by a 0.
+
+It then iterates through a list of numbers which is stored as a guess, and calls a function (which will be explained later) called "Possible". If the function returns true, we can store the number in the grid and continue solving until a solution is found. If this doesn't happen, set it to 0 and backtrack increasing the "guess" by 1 for each iteration until another backtrack is potentially needed.`,
+                    boxTitle: 'SodokuSolver.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                  {
+                    boxName: 'SourceCodeSudokuSolverStepThree',
+                    boxDescription: `This solve function/method does exactly what the name states, solves for each empty cell. To do this it iterates through each y cell and each x cell to check if it is one it needs to solve for which is indicated by a 0.
+
+It then iterates through a list of numbers which is stored as a guess, and calls a function (which will be explained later) called "Possible". If the function returns true, we can store the number in the grid and continue solving until a solution is found. If this doesn't happen, set it to 0 and backtrack increasing the "guess" by 1 for each iteration until another backtrack is potentially needed.`,
+                    boxTitle: 'SodokuSolver.cs',
+                    boxImg: 'assets/images/csharpIcon.png',
+                    boxImgAlt: 'csharp Icon',
+                    boxLanguage: 'csharp',
+                  },
+                ]}
+              />
+            }
+          />
         </Routes>
       </main>
       <Footer />

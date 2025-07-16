@@ -94,13 +94,13 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg',
-    imageAlt: 'Award image',
+    imageLink: 'assets/images/myImages/SodokuSolver.webp',
+    imageAlt: 'Sodoku Solver',
     videoLink: 'assets/videos/myVideos/SudokuSolver.mp4',
     projectTitle: 'Suduko Solver',
     projectDescription:
       'When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was to code this solver which uses a recursive algrothim.',
-    readMoreLink: '/Portfolio/',
+    readMoreLink: '/Portfolio/#/sudokusolver',
     tags: [
       'C#',
       'Unity',
@@ -111,8 +111,8 @@ const projects = [
     ],
   },
   {
-    imageLink: 'assets/images/myImages/Award.jpeg', // REPLACE
-    imageAlt: 'Award image', // REPLACE
+    imageLink: 'assets/images/myImages/Bloom.webp',
+    imageAlt: 'Bloom',
     videoIFrameLink: 'UARZzjsFQg8',
     projectTitle: 'Bloom',
     projectDescription:

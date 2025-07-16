@@ -16,6 +16,8 @@ interface Props {
   githubLink?: string;
   itchioLink?: string;
   itchioIFrame?: string;
+  itchioEmbed?: string;
+  itchioEmbedALink?: string;
   features?: FeatureType[];
   sourceCodeBoxes: SourceCodeBoxes[];
 }
@@ -54,6 +56,8 @@ function Page({
   githubLink,
   itchioLink,
   itchioIFrame,
+  itchioEmbed,
+  itchioEmbedALink,
   features,
   sourceCodeBoxes,
 }: Props) {
@@ -163,6 +167,22 @@ function Page({
                   </a>
                 )}
               </div>
+            )}
+            {itchioEmbed && (
+              <iframe
+                className='itchio-embed'
+                src={itchioEmbed}
+                width='320'
+                height='600'
+              >
+                <a
+                  href={itchioEmbedALink}
+                  target='_blank'
+                  rel='noopener noreferrer nofollow'
+                >
+                  Play {title} on itch.io
+                </a>
+              </iframe>
             )}
           </div>
         </>

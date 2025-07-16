@@ -56,6 +56,7 @@
 
 .context-description {
   margin: 20px;
+  white-space: pre-wrap;
 }
 
 .context-and-description,
@@ -110,6 +111,10 @@
   max-width: 100%;
   height: auto;
   border: none;
+}
+
+.itchio-embed {
+  margin: 0px 20px 20px 20px;
 }
 
 /* Source Code */
