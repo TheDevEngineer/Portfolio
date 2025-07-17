@@ -5,6 +5,19 @@ function SmartScrollToAnchor(
 ) {
   event.preventDefault();
 
+  if (id === 'header' && path === '/Portfolio/') {
+    if (
+      window.location.href.includes('/Portfolio/#/') &&
+      (window.location.hash.match(new RegExp('#', 'g')) || []).length != 2
+    ) {
+      window.location.href = '/Portfolio/';
+      return;
+    }
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    return;
+  }
+
   if (
     window.location.hash === '' ||
     (window.location.hash.match(new RegExp('#', 'g')) || []).length == 2

@@ -25,10 +25,11 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
   }, []);
 
   return (
-    <header className='header'>
+    <header className='header' id='header'>
       <div className='header-left'>
         <a
           className='header-link'
+          onClick={(event) => ScrollToAnchor(event, 'header', '/Portfolio/')}
           href='/Portfolio/'
           rel='noopener noreferrer nofollow'
         >

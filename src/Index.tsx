@@ -8,7 +8,7 @@ const projects = [
     imageAlt: 'EasyAutoScript',
     projectTitle: 'Easy Auto Script',
     projectDescription:
-      'Easy Auto Script is a macro coding language that takes custom Tokens/Keywords "GetForegroundWindow()", and returns it in a new coding language based on EasyAutoScript.txt. This is heavily work in progress and will be getting SendInput commands later on.',
+      'Easy Auto Script is a macro coding language that takes custom Tokens/Keywords "GetForegroundWindow()", and returns it in a new coding language based on EasyAutoScript.txt. This is a heavily work in progress project and will be getting the ability to send input commands soon.',
     readMoreLink: '/Portfolio/#/easyautoscript',
     tags: [
       'C#',
@@ -23,7 +23,7 @@ const projects = [
   {
     projectTitle: 'My Portfolio',
     projectDescription:
-      "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I use to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML.",
+      "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I used to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML/TS/CSS.",
     readMoreLink: '/Portfolio/#/portfolio',
     githubLink: 'https://github.com/IAmAGameDev/Portfolio',
     tags: [
@@ -44,7 +44,7 @@ const projects = [
     videoIFrameLink: '6_uGLtb_7vo',
     projectTitle: 'Cataclysm',
     projectDescription:
-      'This was my final group project of Univiersity, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.',
+      'This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player, must venture round a 3D space ship, solving a mix of 3D and 2D puzzles, to escape from unique monsters which are represented in the 2D realm.',
     readMoreLink: '/Portfolio/#/cataclysm',
     tags: [
       'C#',
@@ -82,7 +82,7 @@ const projects = [
     videoLink: 'assets/videos/myVideos/StyledProjectFolders.mp4',
     projectTitle: 'Styled Project Folders',
     projectDescription:
-      'This is a importable custom Unity package (written in c#), that changes the look of the Unity project folders tab. This works by setting a folder and drawing over the top of it with a sprite of your choice, then you can enable header settings along with if it is recursive (applies to children).',
+      'This is an importable custom Unity package (written in C#), that changes the look of the Unity project folders tab. This works by setting a folder path and drawing over the top of it with a sprite of your choice, then you can enable header settings which has a sub setting to enable recursion (settings apply to child folders).',
     readMoreLink: '/Portfolio/#/styledprojectfolders',
     tags: [
       'C#',
@@ -99,11 +99,12 @@ const projects = [
     videoLink: 'assets/videos/myVideos/SudokuSolver.mp4',
     projectTitle: 'Suduko Solver',
     projectDescription:
-      'When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was to code this solver which uses a recursive algrothim.',
+      'When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was to code this solver which uses a recursive algorithm.',
     readMoreLink: '/Portfolio/#/sudokusolver',
     tags: [
       'C#',
       'Unity',
+      'Git',
       '2D',
       'Visual Studio',
       'Tutorial',
@@ -116,7 +117,7 @@ const projects = [
     videoIFrameLink: 'UARZzjsFQg8',
     projectTitle: 'Bloom',
     projectDescription:
-      'Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
+      'Bloom is a cute cosy flower arrangement game, in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.',
     readMoreLink: '/Portfolio/#/bloom',
     tags: [
       'C#',
