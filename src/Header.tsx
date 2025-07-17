@@ -47,9 +47,6 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
           >
             Projects
           </a>
-          <a className='header-link' href='/Portfolio/'>
-            CV/R&#201;SUM&#201;
-          </a>
           <a
             href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
             target='_blank'

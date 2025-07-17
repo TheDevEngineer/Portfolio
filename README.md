@@ -13,8 +13,6 @@ This page currently uses a default Vite + React template.
   - Last tested: 26/6
   - 100 100 100 100
   - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-- [ ] Remove the CV section. - `MINOR`
-- [ ] Show fake controls on YT hover - do this by showing the play button over the image then once the image disappears that will too - `MINOR`
 
 ---
 

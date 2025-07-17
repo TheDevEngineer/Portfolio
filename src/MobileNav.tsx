@@ -19,9 +19,6 @@ function MobileNav({ mobileNavOpen, setMobileNavOpen }: Props) {
         >
           Projects
         </a>
-        <a href='/Portfolio/' onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-          CV/R&#201;SUM&#201;
-        </a>
         <a
           href='https://iamagamedev.itch.io/'
           target='_blank'

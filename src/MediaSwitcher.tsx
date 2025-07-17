@@ -17,6 +17,7 @@ function MediaSwitcher({
   const [successfulVideoLoad, setSuccessfulVideoLoad] = useState(false);
   const [clickOccured, setClickOccured] = useState(false);
   const [videoPlaying, setVideoPlaying] = useState(false);
+  const [firstTimePlaying, setFirstTimePlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const videoContainerRef = useRef<HTMLDivElement | null>(null);
   const hasReloaded = useRef<boolean>(false);
@@ -71,7 +72,10 @@ function MediaSwitcher({
     }
   }, [videoLink]);
 
-  const handlePlay = () => setVideoPlaying(true);
+  const handlePlay = () => {
+    setFirstTimePlaying(false);
+    setVideoPlaying(true);
+  };
   const handlePause = () => setVideoPlaying(false);
 
   const handleVideoClick = function () {
@@ -84,8 +88,6 @@ function MediaSwitcher({
       clearTimeout(clickTimeoutRef.current);
     }
 
-    console.log(videoPlaying);
-
     clickTimeoutRef.current = setTimeout(() => {
       setClickOccured(false);
     }, 500);
@@ -94,38 +96,38 @@ function MediaSwitcher({
   return (
     <div className='video-container' ref={videoContainerRef}>
       {!successfulVideoLoad && !videoIFrameLink && (
-        <img
-          className='project-image'
-          src={imageLink}
-          alt={imageAlt}
-          style={{
-            display: successfulVideoLoad ? 'none' : 'block',
-            margin: 'fill',
-          }}
-        />
+        <>
+          <img
+            className='project-image'
+            src={imageLink}
+            alt={imageAlt}
+            style={{
+              display: successfulVideoLoad ? 'none' : 'block',
+              margin: 'fill',
+            }}
+          />
+        </>
       )}
       {videoLink && (
         <>
-          <>
-            <div className='video-thumbnail'>
-              <video
-                className='project-video'
-                src={videoLink}
-                ref={videoRef}
-                style={{
-                  display: successfulVideoLoad ? 'block' : 'none',
-                }}
-                onClick={handleVideoClick}
-              ></video>
-              <span
-                className={`material-symbols-outlined video-icon-${
-                  videoPlaying ? 'play' : 'pause'
-                } ${clickOccured ? 'active' : ''}`}
-              >
-                {videoPlaying ? 'arrow_right' : 'pause'}
-              </span>
-            </div>
-          </>
+          <div className='video-thumbnail'>
+            <video
+              className='project-video'
+              src={videoLink}
+              ref={videoRef}
+              style={{
+                display: successfulVideoLoad ? 'block' : 'none',
+              }}
+              onClick={handleVideoClick}
+            ></video>
+            <span
+              className={`material-symbols-outlined video-icon-${
+                videoPlaying ? 'play' : 'pause'
+              } ${clickOccured || firstTimePlaying ? 'active' : ''}`}
+            >
+              {videoPlaying ? 'arrow_right' : 'pause'}
+            </span>
+          </div>
         </>
       )}
       {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}

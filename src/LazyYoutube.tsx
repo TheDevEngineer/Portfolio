@@ -13,12 +13,20 @@ function LazyYoutube({ videoIFrameLink }: Props) {
   return (
     <>
       {!isPlaying ? (
-        <img
-          className='video-thumbnail'
-          src={videoThumbnailLink}
-          alt='YouTube video thumbnail'
-          onClick={() => setIsPlaying(true)}
-        />
+        <div className='video-thumbnail'>
+          <img
+            className='project-image'
+            src={videoThumbnailLink}
+            alt='YouTube video thumbnail'
+            onClick={() => setIsPlaying(true)}
+          />
+          <span
+            className='material-symbols-outlined video-icon-pause active'
+            onClick={() => setIsPlaying(true)}
+          >
+            pause
+          </span>
+        </div>
       ) : (
         <iframe
           className='project-video'
