@@ -28,14 +28,22 @@
   height: auto;
 }
 
-.video-thumbnail,
 .project-image {
   cursor: pointer;
-  aspect-ratio: 16 / 9;
-  max-width: 100%;
+  width: 100%;
+  max-width: 420px;
   height: auto;
   object-fit: cover;
   position: relative;
+}
+
+.video-thumbnail {
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .welcome-section-name,
@@ -107,15 +115,15 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 420px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 420px;
   height: auto;
   aspect-ratio: 16 / 9;
 }
 
 .video-icon-play,
 .video-icon-pause {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -123,9 +131,13 @@
   color: white;
   font-variation-settings: 'FILL' 1;
 
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
+  top: 100px;
+  left: 100px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  transform: scale(0.5) translateZ(0);
   transition: transform 0.5s ease;
 
   display: flex;
@@ -139,7 +151,7 @@
 
 .video-icon-play.active,
 .video-icon-pause.active {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9) translateZ(0);
   opacity: 0.75;
 }
 
@@ -154,8 +166,10 @@
 .project-video,
 .project-image {
   max-width: 100%;
-  height: auto;
-  width: 420px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .project-image {
