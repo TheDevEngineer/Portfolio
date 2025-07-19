@@ -35,9 +35,9 @@ const App = () => {
             element={
               <Page
                 title='Easy Auto Script'
-                description='Easy Auto Script is a macro language that allows custom user inputs, it tokenizes these inputs, parsers the functions, then interprets them to generate a desired output which will either by moving the mouse, sending keyboard or mouse instructions or general windows functions.'
+                description='Easy Auto Script is a macro coding language that takes custom Tokens/Keywords "GetForegroundWindow()", and returns it in a new coding language based on EasyAutoScript.txt. This is a heavily work in progress project and will be getting the ability to send input commands soon.'
                 imageLink='assets/images/myImages/EasyAutoScript.webp'
-                context="This is a personal project I created as I didn't want to rely on third-party software. Instead, I built my own program and interpreter, which supports keyboard and mouse inputs, along with setting foreground windows and other various windows functions using the user32.dll."
+                context="This is a personal project I created as I didn't want to rely on third-party software. Instead, I built my own tokeniser and interpreter, which supports keyboard and mouse inputs, along with setting foreground windows and other various windows functions using the user32.dll."
                 sourcePrivate={true}
                 features={[
                   {
@@ -70,7 +70,7 @@ const App = () => {
                     TokenType (String),
                     Lexeme (The text that was found which in the example I am going to use is "Hello"), 
                     A Literal, which is the actual value: Hello, 
-                    Finally, the Token stores a line number for any parse errors to make it easier to the user to debug once pointed to where the error occured.`,
+                    Finally, the Token stores a line number for any parse errors to make it easier for the user to debug once pointed to where the error occured.`,
                     boxTitle: 'Token.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -85,9 +85,7 @@ const App = () => {
             element={
               <Page
                 title='My Portfolio'
-                description='This portfolio is custom coded in HTML, CSS and JavaScript, It also
-          uses TypeScript and React. I used to host my old portfolio on Wix,
-          however, now I am able to use GitHub pages to host the custom site.'
+                description="This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I used to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML/TS/CSS."
                 images={[
                   {
                     imageLink: 'assets/images/file-type-html.svg',
@@ -121,7 +119,7 @@ const App = () => {
                   {
                     boxName: 'SourceCodeFlexbox',
                     boxDescription:
-                      'My most used thing in this project is the flexbox which uses html and css. Using a flex box is how I achieved the layout for the box below, and many other layout designs on these pages.',
+                      'My most used thing in this project is the flexbox, which uses html and css. Using a flexbox is how I achieved the layout for the box below, and many other layout designs on these pages.',
                     boxTitle: 'index.css',
                     boxImg: 'assets/images/file-type-css.svg',
                     boxImgAlt: 'css Icon',
@@ -130,7 +128,7 @@ const App = () => {
                   {
                     boxName: 'SourceCodeConverter',
                     boxDescription:
-                      "This custom function that I was messing around with is used to convert css to html. I had previously done this in Unity C# to convert my C# code to html which is done via the same effect, making sure that the code that we are converting isn't inside of a comment (which this doesn't do). By using substring, I can insert a <span className'hello'>hello</span> to colourise the text differently with css.",
+                      "This custom function that I was messing around with, is used to convert css to html. I had previously done this in Unity C# to convert my C# code to html which is done via the same effect, making sure that the code that we are converting isn't inside of a comment (which this doesn't do). By using substring, I can insert a <span className'hello'>hello</span> to colourise the text differently with css.",
                     boxTitle: 'CodeConverter.tsx',
                     boxImg: 'assets/images/file-type-typescript-official.svg',
                     boxImgAlt: 'typescript Icon',
@@ -145,9 +143,9 @@ const App = () => {
             element={
               <Page
                 title='Cataclysm'
-                description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player must venture round a 3D space ship solving a mix of 3D and 2D puzzles to each from unique monsters which are represented in the 2D realm.'
+                description='This was my final group project of University, a 2.5D couch co-op multiplayer game. You the player, must venture round a 3D space ship, solving a mix of 3D and 2D puzzles, to escape from unique monsters which are represented in the 2D realm.'
                 videoIFrameLink='6_uGLtb_7vo'
-                context='This project helped develop my team work skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOB). By communicating effectively as a team we were able to tell what needed implementing next, what the bugs/problems were and how to correctly manage our time to reach the hand in target.'
+                context='This project helped develop my teamworking skills and communication. I advanced my knowledge further into the C# language and object-oriented programming (OOP). By communicating effectively as a team, we were able to tell what needed implementing next, what the bugs/problems were, and how to correctly manage our time to reach the hand in target utilising two-week sprints.'
                 sourcePrivate={true}
                 features={[
                   {
@@ -172,7 +170,7 @@ const App = () => {
                       'assets/images/myImages/CataclysmMinigamesTwo.webp',
                     title: 'More Minigames:',
                     description:
-                      'My second favourite minigame is the morse code. This was done by translating dots and dashes via a dictonary lookup into letters.',
+                      'My favourite minigame is the morse code. This was done by translating dots and dashes via a dictonary lookup into letters.',
                     features: [
                       'Reboot Pod Systems Task,',
                       'Morse Code Send Task.',
@@ -183,7 +181,7 @@ const App = () => {
                   {
                     boxName: 'SourceCodeHealthManagerSO',
                     boxDescription:
-                      'Below is a custom ScriptableObject that was used to handle player health. In a parent player script, we can create an instance of this ScriptableObject per player. This allows us to call DecreaseHealth whenever we collide with an enemy which will Invoke a healthChangeEvent method to tell effects/the UIManager to update the health, and flash a blood effect on screen.',
+                      'Below is a custom ScriptableObject, that was used to handle the players health. In a parent player script, we can create an instance of this ScriptableObject per player. This allows us to call DecreaseHealth whenever we collide with an enemy which will invoke a "healthChangeEvent" method to tell effects/the UIManager to update the health, and flash a blood effect on screen.',
                     boxTitle: 'HealthManagerScriptableObject.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -207,9 +205,9 @@ const App = () => {
             element={
               <Page
                 title='StyledHierarchy'
-                description='Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one. With features such as: tree view, headers, displayed tags, layers and components.'
+                description='Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one with features such as: tree view, headers, displayed: tags, layers and components.'
                 videoLink='assets/videos/myVideos/StyledHierarchy.mp4'
-                context='I created this project as I was recommended a Unity Package on the Asset store that is somewhat alike but paid. I thought that it would be a good challenge to create a package myself as it would educate me and can be used in all my future projects. It is easily customisable and I was able to cache GameObject components to save resources. I did look at pre-existing GitHub repositories to help me which were under the MIT license.'
+                context='I created this project as I was recommended a Unity Package on the Asset store that is somewhat alike but paid. I thought that it would be a good challenge to create a package myself, as it would educate me and can be used in all my future projects. It is easily customisable, and I was able to cache GameObject components to save resources. I did look at pre-existing GitHub repositories to help me which were under the MIT license.'
                 githubLink='https://github.com/IAmAGameDev/Portfolio'
                 itchioLink='https://iamagamedev.itch.io/styledhierarchy'
                 itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
@@ -263,7 +261,7 @@ const App = () => {
                   {
                     boxName: 'SourceCodeStyledHierarchyStepOne',
                     boxDescription:
-                      'Below will be a step by step guide on how to create the basic StyledHierarchy script to draw textures for each of the components. First we have to create a new C# script that will be called StyledHierarchy this will need to be placed inside of Unity in a Editor/StyledHierarchy.cs folder so that it runs during editor and not runtime.',
+                      'Below will be a step by step guide on how to create the basic StyledHierarchy script to draw textures for each of the components. First we have to create a new C# script that will be called StyledHierarchy, this will need to be placed inside of Unity at this file path "Editor/StyledHierarchy.cs" so that it runs during editor refresh and not development runtime.',
                     boxTitle: 'StyledHierarchy.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -282,11 +280,11 @@ const App = () => {
                     boxName: 'SourceCodeStyledHierarchyStepThree',
                     boxDescription: `Inside this draw method, we should first check and return if the object we have got from the "instanceID" is null. This usually occurs when it draws the scene name.
 
-Next we can convert the instanceID to a Object by using: "Object objectReference = EditorUtility.InstanceIDToObject(instanceID);" Then converting it into a GameObject with: "GameObject gameObject = objectReference as GameObject;". Now we have the GameObject we are drawing we just need a list of its components, we can get this by using: "Component[] objectComponents = gameObject.GetComponents<Component>();"
+Next we can convert the instanceID to an Object by using: "Object objectReference = EditorUtility.InstanceIDToObject(instanceID);" Then converting it into a GameObject with: "GameObject gameObject = objectReference as GameObject;". Now we have the GameObject we are drawing, we just need a list of its components, we can get this by using: "Component[] objectComponents = gameObject.GetComponents<Component>();"
 
 Now lets store an integer called "offset" and by default set it to 0 (this will come in use later).
 
-The final steps are to setup the foor loop for all objectComponents we collected, we need to collect the icon Unity currently uses (see code block below) for full line of code. Once we have the GUIContent Unity uses, which stores the image and text but we just need the image in this case. we can store this as a Texture2D. Finally using "GUI.DrawTexture(newRect, componentTexture);" to make the component icons come to life (adding a offset (20pixels) after every icon)`,
+The final steps are to setup the for loop, for all objectComponents we collected, we need to collect the icon Unity currently uses (see code block below) for full lines of code. Once we have the GUIContent Unity uses, which stores the image and text but we just need the image in this case, we can store this as a Texture2D. Finally using "GUI.DrawTexture(newRect, componentTexture);" to make the component icons come to life (adding a offset of 20 pixels after every icon)`,
                     boxTitle: 'StyledHierarchy.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -301,9 +299,9 @@ The final steps are to setup the foor loop for all objectComponents we collected
             element={
               <Page
                 title='StyledProjectFolders'
-                description='This project was an educational and personal project I completed after coding my StyledHierarchy project. I created this as I disliked how Unity originally looks. This is now a package that I import into all my Unity projects, to help visualise where prefabs/assets are stored.'
+                description='This is an importable custom Unity package (written in C#), that changes the look of the Unity project folders tab. This works by setting a folder path and drawing over the top of it with a sprite of your choice, then you can enable header settings which has a sub setting to enable recursion (settings apply to child folders).'
                 videoLink='assets/videos/myVideos/StyledProjectFolders.mp4'
-                context='This is a follow up package after completing StyledHierarchy that changes the look of the project folders window (see image above). I really like the customisation settings on this project, it takes in a folder path that the user wants to customise, and then it displays different settings along with textures for if the folder is empty, or contains data (more features below).'
+                context='This is a follow up package after completing StyledHierarchy that changes the look of the project folders window (see video above). I really like the customisation settings on this project, it takes in a folder path that the user wants to customise, and then it displays different settings along with textures for if the folder is empty, or contains data (more features below).'
                 sourcePrivate={true}
                 features={[
                   {
@@ -348,9 +346,9 @@ The final steps are to setup the foor loop for all objectComponents we collected
 
 I have added comments for what each major line does, it utilises Unity methods such as "GUI.DrawTexture" at a "Rect" with the "Texture" folder in this case.
 
-When Unity "re-draws" the Project Window, a API is called which we can subscribe to by doing "EditorApplication.projectWindowItemOnGUI += Draw;". This allows us to find what item is being drawn, as it gives us a guid (unique identifier) along with a "Rect" of what item is being drawn.
+When Unity "re-draws" the Project Window, an API is called which we can subscribe to by doing "EditorApplication.projectWindowItemOnGUI += Draw;". This allows us to find what item is being drawn, as it gives us a guid (unique identifier) along with a "Rect" of what item is being drawn.
 
-The secret behind these projects is that the images are just being drawn over the top of the previous ones. Due to how Unity works, there is no current way to override the folder icon without drawing over the previous one, this is the same case with the Hierarchy.
+The secret behind these projects, is that the images are just being drawn over the top of the previous ones. Due to how Unity works, there is no current way to override the folder icon without drawing over the previous one, this is the same case with the Hierarchy.
 
 Therefore getting creative with drawing it above as if the one drawn by Unity didn't exist can achieve a good but not perfect result. This is because it still uses resources in the first place to draw the first texture then to re-draw ours.`,
                     boxTitle: 'StyledProjectFolders.cs',
@@ -367,9 +365,9 @@ Therefore getting creative with drawing it above as if the one drawn by Unity di
             element={
               <Page
                 title='Sodoku Solver'
-                description='When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was this sudoku solver which uses a recursive algrothim.'
+                description='When on holiday, I enjoy solving sudoku puzzles. Therefore, I decided to set myself a personal project to complete which was to code this solver which uses a recursive algorithm.'
                 videoLink='assets/videos/myVideos/SudokuSolver.mp4'
-                context={`This C# sudoku solver was an educational project that I have created in my own time, it uses a recursive algorithm to solve the boards. To achieve this solver I followed this YouTube tutorial: (Create Sudoku Solver with Python in 20 minutes, 5 Jan. 2021).
+                context={`This C# sudoku solver was an educational project that I have created in my own time, it uses a recursive algorithm to solve the boards. To achieve this solver, I followed this YouTube tutorial: (Create Sudoku Solver with Python in 20 minutes, 5 Jan. 2021).
 
 What is a recursive backtracking algorithm and how do I use it?
 
@@ -383,7 +381,7 @@ By iterating through a list of possible numbers for each cell, then trying to so
                     boxName: 'SourceCodeSudokuSolverStepOne',
                     boxDescription: `Below is how I use 2 dimensional arrays in Unity C# to create a grid.
 
-This 2 dimensional array allows me to pass through a y and x position to get a value: "int cell = grid[y, x]" with the number starting at 0 as it is an array. Therefore, to get the top left slot and set it to 0 I would call "grid[0, 0] = 0"`,
+This 2 dimensional array allows me to pass through a y and x position to get a value: "int cell = grid[y, x]" with the number starting at 0 as it is an array. Therefore, to get the top left slot and set it to 0 I would call "grid[0, 0] = 0".`,
                     boxTitle: 'SodokuSolver.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -393,7 +391,7 @@ This 2 dimensional array allows me to pass through a y and x position to get a v
                     boxName: 'SourceCodeSudokuSolverStepTwo',
                     boxDescription: `This solve function/method does exactly what the name states, solves for each empty cell. To do this it iterates through each y cell and each x cell to check if it is one it needs to solve for which is indicated by a 0.
 
-It then iterates through a list of numbers which is stored as a guess, and calls a function (which will be explained later) called "Possible". If the function returns true, we can store the number in the grid and continue solving until a solution is found. If this doesn't happen, set it to 0 and backtrack increasing the "guess" by 1 for each iteration until another backtrack is potentially needed.`,
+It then iterates through a list of numbers which is stored as a guess, and calls a function (which will be explained later) called "Possible". If the function returns true, we can store the number in the grid and continue solving until a solution is found. If this doesn't happen, set it to 0 and backtrack increasing the "guess" by 1 for each iteration until another backtrack is potentially needed or the grid is solved/impossible.`,
                     boxTitle: 'SodokuSolver.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -401,9 +399,17 @@ It then iterates through a list of numbers which is stored as a guess, and calls
                   },
                   {
                     boxName: 'SourceCodeSudokuSolverStepThree',
-                    boxDescription: `This solve function/method does exactly what the name states, solves for each empty cell. To do this it iterates through each y cell and each x cell to check if it is one it needs to solve for which is indicated by a 0.
+                    boxDescription: `This "Possible" function takes in a "guessingNum" (the number that I am currently guessing) and a "currentX" and "currentY" position.
 
-It then iterates through a list of numbers which is stored as a guess, and calls a function (which will be explained later) called "Possible". If the function returns true, we can store the number in the grid and continue solving until a solution is found. If this doesn't happen, set it to 0 and backtrack increasing the "guess" by 1 for each iteration until another backtrack is potentially needed.`,
+I iterate through the "xCell"s along the "currentY" position and check if any of these cells contain the number we are guessing if so return false., I also do this for the "currentX" by iterating through the "yCell"s.
+
+The final thing in sodoku that needs checking is the grid, to achieve this you need to work out what grid starting position you are currently in. For example lets use [8, 8] which is the last cell in a grid as we start on [0, 0].
+
+"int xCellFloored = (int)Mathf.Floor(currentX / 3)" this line does the following: (8 / 3 = 2.6r) floored = 2
+
+"xCellFloored *= 3" makes it [6, 6]
+
+Therefore from [8, 8] the square grid that needs checking is [6, 6] [6, 7] [6, 8] then increasing the y position too.`,
                     boxTitle: 'SodokuSolver.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',
@@ -418,9 +424,9 @@ It then iterates through a list of numbers which is stored as a guess, and calls
             element={
               <Page
                 title='Bloom'
-                description='Bloom is a cute cosy flower arrangement game in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for such as an anniversary, then make a connection within a time limit for example any flowers that are the colour red and arrange a beautiful bouquet.'
+                description='Bloom is a cute cosy flower arrangement game, in which you have to take over your Grandmothers flower shop in order to raise money. It requires you to talk to your customers to understand what occasion they are buying flowers for. Then you have to arrange flowers within a time limit and make a beautiful bouquet.'
                 videoIFrameLink='UARZzjsFQg8'
-                context={`This Project was my Second Year University group project where I was the lead-programmer and animation designer. To achieve this I coded the flower arrangement side of the game along with the scoring system, timer and main menu. I designed animations for wrapping the bouquet, is done with a plugin/package called DoTween, which allows for scripting animations within Unity.`}
+                context={`This Project was my Second Year University group project, where I was the lead-programmer and animation designer. To achieve this I coded the flower arrangement side of the game, along with the scoring system, timer and main menu. I designed animations for wrapping the bouquet, which is done with a plugin/package called DoTween, which allows for scripting animations within Unity.`}
                 itchioLink='https://dont-ask-productions.itch.io/bloom'
                 itchioIFrame='https://itch.io/embed/2711547?border_width=5&amp;dark=true'
                 itchioEmbed='https://itch.io/embed-upload/10435569?color=333333'
@@ -434,7 +440,7 @@ By checking when a mouse enters, exits, is pressed (down) and released (up) you 
 
 An example of this is using the "OnMouseEnter" method to display the flower data based on what image (flower) the mouse has hovered over, then as it leaves "OnMouseExit" we can hide the information box.
 
-The "OnMouseDown" method is used to pickup a flower (causing it to follow the cursor position by setting a boolean to true) then we can disable the boolean within "OnMouseUp" call handling if it is in an arrangement spot or if it needs to be returned back to the flower bucket.`,
+The "OnMouseDown" method, is used to pickup a flower (causing it to follow the cursor position by setting a boolean to true). Then, we can disable the boolean within "OnMouseUp" call handling, finally checking if it is in an arrangement spot or if it needs to be returned back to the flower bucket.`,
                     boxTitle: 'MouseHandlers.cs',
                     boxImg: 'assets/images/csharpIcon.png',
                     boxImgAlt: 'csharp Icon',

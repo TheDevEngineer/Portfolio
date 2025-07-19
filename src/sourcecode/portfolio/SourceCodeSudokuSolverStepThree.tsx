@@ -5,7 +5,7 @@ function SourceCodeSudokuSolverStepThree() {
       <span className='y'>Possible</span>(<span className='db'>int</span>{' '}
       <span className='lb'>guessingNum</span>, <span className='db'>int</span>{' '}
       <span className='lb'>currentX</span>, <span className='db'>int</span>{' '}
-      <span className='lb'>currentY</span>)br
+      <span className='lb'>currentY</span>)
       <br />
       &#123;
       <br />

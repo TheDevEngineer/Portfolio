@@ -10,11 +10,9 @@ This page currently uses a default Vite + React template.
 ## To-Do List
 
 - [x] Lighthouse Speed & Accessibility Audit
-  - Last tested: 26/6
-  - 100 100 100 100
-  - 0.4s First Contentful Paint - 0.4s Largest Contentful Paint
-
----
+  - Last tested: 17/07
+  - `Desktop:` 100 100 100 100
+  - 0.5s First Contentful Paint - 0.8s Largest Contentful Paint
 
 ## Licensing Information
 

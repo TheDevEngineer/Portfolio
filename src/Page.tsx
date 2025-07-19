@@ -148,8 +148,8 @@ function Page({
                   >
                     <img
                       className='iframe mobile-layout'
-                      width='175'
-                      height='175'
+                      width='125'
+                      height='125'
                       src='assets/images/itchio-logo-textless-black.svg'
                       alt='itchio Logo'
                     />
@@ -163,9 +163,9 @@ function Page({
                     aria-label='View the source files on GitHub'
                   >
                     <img
-                      className='iframe'
-                      width='175'
-                      height='175'
+                      className='iframe github'
+                      width='125'
+                      height='125'
                       src='assets/images/github-mark.svg'
                       alt='GitHub Mark'
                     />
