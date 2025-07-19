@@ -115,7 +115,7 @@
 
 .video-icon-play,
 .video-icon-pause {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -123,7 +123,7 @@
   color: white;
   font-variation-settings: 'FILL' 1;
 
-  top: 50%;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
   transition: transform 0.5s ease;
@@ -134,6 +134,7 @@
 
   opacity: 0;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 .video-icon-play.active,

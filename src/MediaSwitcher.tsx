@@ -42,32 +42,12 @@ function MediaSwitcher({
       vid.addEventListener('error', handleError);
       vid.addEventListener('play', handlePlay);
       vid.addEventListener('pause', handlePause);
-      if (videoContainerRef.current) {
-        videoContainerRef.current.addEventListener(
-          'mouseover',
-          () => (vid.controls = true)
-        );
-        videoContainerRef.current.addEventListener(
-          'mouseleave',
-          () => (vid.controls = false)
-        );
-      }
 
       return () => {
         vid.removeEventListener('loadeddata', handleVideoSwap);
         vid.removeEventListener('error', handleError);
         vid.removeEventListener('play', handlePlay);
         vid.removeEventListener('pause', handlePause);
-        if (videoContainerRef.current) {
-          videoContainerRef.current.removeEventListener(
-            'mouseover',
-            () => (vid.controls = true)
-          );
-          videoContainerRef.current.removeEventListener(
-            'mouseleave',
-            () => (vid.controls = false)
-          );
-        }
       };
     }
   }, [videoLink]);
@@ -76,9 +56,16 @@ function MediaSwitcher({
     setFirstTimePlaying(false);
     setVideoPlaying(true);
   };
-  const handlePause = () => setVideoPlaying(false);
+  const handlePause = () => {
+    setVideoPlaying(false);
+  };
 
   const handleVideoClick = function () {
+    if (videoPlaying) {
+      videoRef.current?.pause();
+    } else {
+      videoRef.current?.play();
+    }
     setVideoPlaying(!videoPlaying);
 
     // Not sure why this timeout is needed due to event delay?
