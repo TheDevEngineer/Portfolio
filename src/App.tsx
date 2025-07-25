@@ -114,7 +114,7 @@ const App = () => {
                   },
                 ]}
                 context="I created this project to move away from using Wix to host my portfolio as it didn't allow for SEO. Also it has been a fun project to learn new coding languages and frameworks which were required to make these pages dynamic."
-                githubLink='https://github.com/IAmAGameDev/Portfolio'
+                githubLink='https://github.com/TheDevEngineer/Portfolio'
                 sourceCodeBoxes={[
                   {
                     boxName: 'SourceCodeFlexbox',
@@ -208,7 +208,7 @@ const App = () => {
                 description='Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one with features such as: tree view, headers, displayed: tags, layers and components.'
                 videoLink='assets/videos/myVideos/StyledHierarchy.mp4'
                 context='I created this project as I was recommended a Unity Package on the Asset store that is somewhat alike but paid. I thought that it would be a good challenge to create a package myself, as it would educate me and can be used in all my future projects. It is easily customisable, and I was able to cache GameObject components to save resources. I did look at pre-existing GitHub repositories to help me which were under the MIT license.'
-                githubLink='https://github.com/IAmAGameDev/Portfolio'
+                githubLink='https://github.com/TheDevEngineer/Portfolio'
                 itchioLink='https://iamagamedev.itch.io/styledhierarchy'
                 itchioIFrame='https://itch.io/embed/3463919?border_width=5&amp;dark=true'
                 features={[

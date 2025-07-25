@@ -63,10 +63,11 @@ function MediaSwitcher({
   const handleVideoClick = function () {
     if (videoPlaying) {
       videoRef.current?.pause();
+      setVideoPlaying(false);
     } else {
       videoRef.current?.play();
+      setVideoPlaying(true);
     }
-    setVideoPlaying(!videoPlaying);
 
     // Not sure why this timeout is needed due to event delay?
     setClickOccured(true);
@@ -97,24 +98,22 @@ function MediaSwitcher({
       )}
       {videoLink && (
         <>
-          <div className='video-thumbnail'>
-            <video
-              className='project-video'
-              src={videoLink}
-              ref={videoRef}
-              style={{
-                display: successfulVideoLoad ? 'block' : 'none',
-              }}
-              onClick={handleVideoClick}
-            ></video>
-            <span
-              className={`material-symbols-outlined video-icon-${
-                videoPlaying ? 'play' : 'pause'
-              } ${clickOccured || firstTimePlaying ? 'active' : ''}`}
-            >
-              {videoPlaying ? 'arrow_right' : 'pause'}
-            </span>
-          </div>
+          <video
+            className='project-video'
+            src={videoLink}
+            ref={videoRef}
+            style={{
+              display: successfulVideoLoad ? 'block' : 'none',
+            }}
+            onClick={handleVideoClick}
+          ></video>
+          <span
+            className={`material-symbols-outlined video-icon-${
+              videoPlaying ? 'play' : 'pause'
+            } ${clickOccured || firstTimePlaying ? 'active' : ''}`}
+          >
+            {videoPlaying ? 'arrow_right' : 'pause'}
+          </span>
         </>
       )}
       {videoIFrameLink && <LazyYoutube videoIFrameLink={videoIFrameLink} />}

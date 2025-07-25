@@ -25,7 +25,7 @@ const projects = [
     projectDescription:
       "This portfolio is custom coded in HTML, CSS and JavaScript and I'm currently implementing React with TypeScript. I used to host my old portfolio on Wix however, now I am able to use GitHub pages to host the custom HTML/TS/CSS.",
     readMoreLink: '/Portfolio/#/portfolio',
-    githubLink: 'https://github.com/IAmAGameDev/Portfolio',
+    githubLink: 'https://github.com/TheDevEngineer/Portfolio',
     tags: [
       'HTML',
       'CSS',
@@ -66,7 +66,7 @@ const projects = [
       'Ever get bored of the default Unity look? This project solves that by overlapping the default Hierarchy with a custom one with features such as: tree view, headers, displayed: tags, layers and components.',
     readMoreLink: '/Portfolio/#/styledhierarchy',
     itchioLink: 'https://iamagamedev.itch.io/styledhierarchy',
-    githubLink: 'https://github.com/IAmAGameDev/StyledHierarchy',
+    githubLink: 'https://github.com/TheDevEngineer/StyledHierarchy',
     tags: [
       'C#',
       'Unity',

@@ -70,7 +70,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
             />
           </a>
           <a
-            href='https://github.com/IAmAGameDev'
+            href='https://github.com/TheDevEngineer'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
