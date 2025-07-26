@@ -48,7 +48,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
             Projects
           </a>
           <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+            href='https://www.linkedin.com/in/baileykitchen'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
@@ -85,7 +85,7 @@ function Header({ mobileNavOpen, setMobileNavOpen }: Props) {
       {!isDesktop && (
         <div className='header-right-mobile'>
           <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+            href='https://www.linkedin.com/in/baileykitchen'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >

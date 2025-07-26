@@ -16,7 +16,7 @@ function Footer() {
           </a>{' '}
           &{' '}
           <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+            href='https://www.linkedin.com/in/baileykitchen'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
@@ -27,7 +27,7 @@ function Footer() {
       <div>
         <p>
           <a
-            href='https://www.linkedin.com/in/bailey-kitchen-600657363/'
+            href='https://www.linkedin.com/in/baileykitchen'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
